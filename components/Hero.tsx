@@ -24,7 +24,7 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-5xl"
             words="Outstanding Digital Solutions for Marketing and Web Development"
           />
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl text-gray-500">
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl text-gray-400">
             Let us elevate your online presence and drive your success.
           </p>
           <a href="#about">
