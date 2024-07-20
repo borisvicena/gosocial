@@ -3,7 +3,7 @@ import { ModeToggle } from "./ui/ThemeToggle";
 import { GridBackground } from "./ui/GridBackground";
 import { TextGenerateEffect } from "./ui/TextGenerate";
 import MagicButton from "./ui/MagicButton";
-import { FaLocationArrow } from "react-icons/fa";
+import { SlArrowDown } from "react-icons/sl";
 import { Spotlight } from "./ui/Spotlight";
 
 const Hero = () => {
@@ -28,7 +28,7 @@ const Hero = () => {
             Let us elevate your online presence and drive your success.
           </p>
           <a href="#about">
-            <MagicButton title="Learn more" icon={<FaLocationArrow />} position="right" />
+            <MagicButton title="Learn more" icon={<SlArrowDown />} position="right" />
           </a>
         </div>
       </div>
