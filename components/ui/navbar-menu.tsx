@@ -3,6 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { ThemeToggle } from "./ThemeToggle";
+import { FaRocketchat } from "react-icons/fa";
 
 const transition = {
   type: "spring",
@@ -68,11 +70,21 @@ export const Menu = ({
   children: React.ReactNode;
 }) => {
   return (
-    <nav
-      onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-lg backdrop-filter backdrop-blur-lg bg-opacity-30 border border-transparent dark:bg-transparent dark:border-white/[0.2] bg-white shadow-input flex flex-1 justify-center items-center space-x-4 px-8 py-6 "
-    >
-      {children}
+    <nav className="relative rounded-lg backdrop-filter backdrop-blur-lg bg-opacity-30 border border-transparent dark:bg-transparent dark:border-white/[0.2] bg-white shadow-input flex items-center px-8">
+      <div>
+        <a href="localhost:3000" className="relative flex items-center font-bold gap-2 text-lg">
+          GoSocial <FaRocketchat className="text-purple-200" />
+        </a>
+      </div>
+      <div
+        onMouseLeave={() => setActive(null)} // resets the state
+        className="flex justify-center space-x-6 p-6"
+      >
+        {children}
+      </div>
+      <div className="flex flex-auto justify-end">
+        <ThemeToggle />
+      </div>
     </nav>
   );
 };
