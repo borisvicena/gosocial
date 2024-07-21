@@ -2,7 +2,6 @@ import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Metrics from "@/components/Metrics";
 import { MainNavbar } from "@/components/ui/NavbarMenu";
-import Image from "next/image";
 
 export default function Home() {
   return (
