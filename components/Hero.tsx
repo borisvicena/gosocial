@@ -1,5 +1,4 @@
 import React from "react";
-import { ModeToggle } from "./ui/ThemeToggle";
 import { GridBackground } from "./ui/GridBackground";
 import { TextGenerateEffect } from "./ui/TextGenerate";
 import MagicButton from "./ui/MagicButton";
