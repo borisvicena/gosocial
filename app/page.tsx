@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
+import Metrics from "@/components/Metrics";
 import { MainNavbar } from "@/components/ui/NavbarMenu";
 import Image from "next/image";
 
@@ -9,7 +10,7 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <MainNavbar />
         <Hero />
-        <About />
+        <Metrics />
       </div>
     </main>
   );
