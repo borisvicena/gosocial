@@ -3,7 +3,7 @@ import { FeaturesSection } from "./ui/FeaturesSection";
 
 const Metrics = () => {
   return (
-    <div className="relative py-20 lg:py-40">
+    <div className="py-20 lg:py-40">
       <FeaturesSection />
       <p className="text-white font-bold text-3xl mt-10">
         We like to talk{" "}
