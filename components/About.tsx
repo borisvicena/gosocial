@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section id="about">
       <div className="relative py-20 h-[100vh]">
-        <h2 className="text-white heading">We strive for better digital future</h2>
+        <h2 className="dark:text-white text-black-100 heading">We strive for better digital future</h2>
         <div className="flex flex-wrap items-center justify-center">
           <p>hello</p>
         </div>

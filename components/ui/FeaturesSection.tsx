@@ -1,29 +1,6 @@
 "use client";
 import React from "react";
 import { useId } from "react";
-import { gridItems } from "@/data";
-
-export function FeaturesSection() {
-  return (
-    <div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-5 max-w-7xl mx-auto ">
-        {gridItems.map(({ id, title, value, description }) => (
-          <div
-            key={id}
-            className="relative bg-gradient-to-b from-[#9e65f4] dark:to-[#020617] p-6 rounded-lg overflow-hidden"
-          >
-            <Grid size={20} />
-            <p className="text-4xl font-bold">{value}</p>
-            <p className="text-base font-light uppercase tracking-wider dark:text-neutral-200 relative z-20">{title}</p>
-            <p className="text-neutral-600 dark:text-neutral-400 mt-4 text-base font-normal relative z-20">
-              {description}
-            </p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
 
 export const Grid = ({ pattern, size }: { pattern?: number[][]; size?: number }) => {
   const p = pattern ?? [
@@ -65,7 +42,7 @@ export function GridPattern({ width, height, x, y, squares, ...props }: any) {
           {squares.map(([x, y]: any, index: number) => (
             <rect
               strokeWidth="0"
-              key={`${x}-${y}-${index}`}
+              key={`${x}-${y}`}
               width={width + 1}
               height={height + 1}
               x={x * width}

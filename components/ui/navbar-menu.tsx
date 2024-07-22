@@ -70,10 +70,10 @@ export const Menu = ({
   children: React.ReactNode;
 }) => {
   return (
-    <nav className="relative rounded-lg backdrop-filter backdrop-blur-lg bg-opacity-30 border border-transparent dark:bg-transparent dark:border-white/[0.2] bg-white shadow-input flex items-center px-8">
+    <nav className="relative rounded-lg backdrop-filter backdrop-blur-lg bg-opacity-30 border border-black-100/[0.2] dark:bg-transparent dark:border-white/[0.2]  shadow-input flex items-center px-8">
       <div>
         <a href="localhost:3000" className="relative flex items-center font-bold gap-2 text-lg">
-          GoSocial <FaRocketchat className="text-purple-200" />
+          GoSocial <FaRocketchat className="dark:text-purple-200 text-purple-400" />
         </a>
       </div>
       <div

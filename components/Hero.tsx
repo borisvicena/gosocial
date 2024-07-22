@@ -16,14 +16,14 @@ const Hero = () => {
       </div>
       <div className="relative flex justify-center my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[50vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-sm text-center text-blue-100 max-w-80">
+          <h2 className="uppercase tracking-widest text-sm text-center dark:text-blue-100 text-blue-900 max-w-80">
             MULTI-DIGITAL SOLUTION AGENCY
           </h2>
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-5xl"
             words="Outstanding Digital Solutions for Marketing and Web Development"
           />
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl text-gray-400">
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl text-gray-500">
             Let us elevate your online presence and drive your success.
           </p>
           <a href="#about">

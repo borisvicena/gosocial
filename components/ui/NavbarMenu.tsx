@@ -4,14 +4,6 @@ import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "./ThemeToggle";
 
-export function MainNavbar() {
-  return (
-    <div className="relative w-full flex items-center justify-between">
-      <Navbar className="top-2" />
-    </div>
-  );
-}
-
 export function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
