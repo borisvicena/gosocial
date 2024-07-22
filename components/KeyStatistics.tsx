@@ -4,9 +4,9 @@ import { gridItems } from "@/data";
 
 const KeyStatistics = () => {
   return (
-    <div className="py-20 lg:py-40">
+    <div className="py-20 lg:py-40 max-w-7xl w-full">
       <div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-5 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-5 mx-auto">
           {gridItems.map(({ id, title, value, description }) => (
             <div
               key={id}
