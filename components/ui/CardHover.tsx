@@ -55,7 +55,7 @@ export const HoverEffect = ({
             </CardTitle>
             <CardDescription>
               {item.description.map((desc) => (
-                <span className="w-full inline-flex items-center">
+                <span key={desc} className="w-full inline-flex items-center">
                   {iconPosition === "left" && icon}
                   {desc}
                   {iconPosition === "right" && icon}
