@@ -11,14 +11,23 @@ export function Navbar({ className }: { className?: string }) {
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
+            <HoveredLink href="/web-development">Web Development</HoveredLink>
+            <HoveredLink href="/mobile-app-development">Mobile App Development</HoveredLink>
+            <HoveredLink href="/digital-marketing">Digital Marketing</HoveredLink>
+            <HoveredLink href="/content-creation">Content Creation</HoveredLink>
+            <HoveredLink href="/branding-and-identity">Branding & Identity</HoveredLink>
+            <HoveredLink href="/ui-and-ux-design">UI/UX Design</HoveredLink>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Products">
-          <div className="  text-sm grid grid-cols-2 gap-10 p-4"></div>
+          <div className="  text-sm grid grid-cols-1 gap-10 p-4">
+            <ProductItem
+              title="GoSocial Platform"
+              description="Build your online success now."
+              href="#"
+              src="/platform.jpg"
+            />
+          </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Pricing">
           <div className="flex flex-col space-y-4 text-sm">
