@@ -67,7 +67,7 @@ export const services = [
   },
 ];
 
-const words = ["website", "design", "branding", "content", "strategy"];
+const words = ["website", "design", "marketing", "brand", "content", "strategy"];
 
 const About = () => {
   return (
