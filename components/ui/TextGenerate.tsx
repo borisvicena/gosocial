@@ -21,21 +21,26 @@ export const TextGenerateEffect = ({ words, className }: { words: string; classN
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope}>
-        {wordsArray.map((word, idx) => {
-          return (
-            <motion.span
-              key={word + idx}
-              className={`${
-                idx === 4 || idx > 5
-                  ? "bg-gradient-to-br from-[#9e65f4] dark:to-[#cbacf9] to-purple-700 bg-clip-text text-transparent"
-                  : "bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-transparent"
-              } opacity-0`}
-            >
-              {word}{" "}
-            </motion.span>
-          );
-        })}
+      <motion.div
+        ref={scope}
+        className="relative bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-transparent"
+      >
+        <div className="w-full">
+          {wordsArray.map((word, idx) => {
+            return (
+              <motion.span
+                key={word + idx}
+                className={`${
+                  idx === 4 || idx > 5
+                    ? "bg-gradient-to-br from-[#9e65f4] dark:to-[#cbacf9] to-purple-700 bg-clip-text text-transparent"
+                    : ""
+                }`}
+              >
+                {word}{" "}
+              </motion.span>
+            );
+          })}
+        </div>
       </motion.div>
     );
   };
