@@ -1,6 +1,7 @@
 import React from "react";
 import { Lamp } from "./ui/Lamp";
 import { HoverEffect } from "./ui/CardHover";
+import { FlipWords } from "./ui/FlipWords";
 
 export const services = [
   {
@@ -39,6 +40,8 @@ export const services = [
   },
 ];
 
+const words = ["website", "design", "branding", "content", "strategy"];
+
 const About = () => {
   return (
     <section id="about">
@@ -46,7 +49,14 @@ const About = () => {
         <div>
           <Lamp mainText="Elevating every dimension of your" gradientText="digital world" />
         </div>
-        <div className="max-w-5xl mx-auto px-8">
+        <div className="h-[10rem] flex justify-start items-center px-4">
+          <div className="text-5xl font-normal text-neutral-600 dark:text-neutral-400 leading-tight">
+            Build your
+            <FlipWords words={words} /> <br />
+            with GoSocial
+          </div>
+        </div>
+        <div className="max-w-7xl mx-auto">
           <HoverEffect items={services} />
         </div>
       </div>
