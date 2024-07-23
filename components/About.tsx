@@ -2,41 +2,68 @@ import React from "react";
 import { Lamp } from "./ui/Lamp";
 import { HoverEffect } from "./ui/CardHover";
 import { FlipWords } from "./ui/FlipWords";
+import { FaCaretRight } from "react-icons/fa";
 
 export const services = [
   {
     title: "Web Development",
-    description: "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
+    description: [
+      "Custom Website Design and Development",
+      "E-commerce Solutions",
+      "Content Management System (CMS)",
+      "Website Maintenance and Support",
+    ],
+    link: "/web-development",
   },
   {
     title: "Mobile App Development",
-    description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+    description: [
+      "iOS and Android App Development",
+      "Cross-platform App Development",
+      "Mobile App UI/UX Design",
+      "App Store Optimization (ASO)",
+    ],
+    link: "mobile-app-development",
   },
   {
     title: "Digital Marketing",
-    description: "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+    description: [
+      "Search Engine Optimization (SEO)",
+      "Pay-Per-Click (PPC) Advertising",
+      "Social Media Marketing (SMM)",
+      "Email Marketing Campaigns",
+    ],
+    link: "digital-marketing",
   },
   {
     title: "Content Creation",
-    description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+    description: [
+      "Copywriting and Blogging",
+      "Video Production and Editing",
+      "Graphic Design and Infographics",
+      "Photography Services",
+    ],
+    link: "content-creation",
   },
   {
     title: "Branding & Identity",
-    description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+    description: [
+      "Logo Design and Brand Identity",
+      "Brand Strategy and Consulting",
+      "Brand Guidelines Development",
+      "Print and Digital Design",
+    ],
+    link: "branding-and-identity",
   },
   {
     title: "UI/UX Design",
-    description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+    description: [
+      "User Interface (UI) Design",
+      "User Experience (UX) Research and Testing",
+      "Prototyping and Wireframing",
+      "Usability Testing",
+    ],
+    link: "ui-and-ux-design",
   },
 ];
 
@@ -57,7 +84,7 @@ const About = () => {
           </div>
         </div>
         <div className="max-w-7xl mx-auto">
-          <HoverEffect items={services} />
+          <HoverEffect items={services} icon={<FaCaretRight />} iconPosition="left" />
         </div>
       </div>
     </section>

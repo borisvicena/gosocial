@@ -3,17 +3,22 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
+import { FaCaretRight, FaCrown } from "react-icons/fa";
 
 export const HoverEffect = ({
   items,
   className,
+  icon,
+  iconPosition,
 }: {
   items: {
     title: string;
-    description: string;
+    description: string[];
     link: string;
   }[];
   className?: string;
+  icon: React.ReactNode;
+  iconPosition: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
@@ -30,7 +35,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-[#cbacf9]/[0.1] block  rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -45,8 +50,18 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.description}</CardDescription>
+            <CardTitle className="bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-transparent">
+              {item.title}
+            </CardTitle>
+            <CardDescription>
+              {item.description.map((desc) => (
+                <span className="w-full inline-flex items-center">
+                  {iconPosition === "left" && icon}
+                  {desc}
+                  {iconPosition === "right" && icon}
+                </span>
+              ))}
+            </CardDescription>
           </Card>
         </Link>
       ))}
@@ -58,7 +73,7 @@ export const Card = ({ className, children }: { className?: string; children: Re
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black-100 border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-full w-full p-4 overflow-hidden bg-black-100 border border-transparent dark:border-white/[0.2] group-hover:border-[#9e65f4] relative z-20",
         className
       )}
     >
