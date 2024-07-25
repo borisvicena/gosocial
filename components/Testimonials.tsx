@@ -50,32 +50,32 @@ const people = [
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "Their innovative approach transformed our digital presence. We saw a 40% increase in engagement within the first quarter!",
+    name: "Sarah Johnson",
+    title: "Marketing Director at Tech Innovators Inc.",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
-  },
-  {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+      "Working with this agency has been a game-changer for our brand. Their expertise and dedication are unmatched.",
+    name: "David Lee",
+    title: "CEO of GreenTech Solutions",
   },
   {
     quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+      "The team's strategic insights and creative solutions helped us achieve our best sales year yet. Highly recommend!",
+    name: "Emily Martinez",
+    title: "Head of Digital Strategy at HealthPlus",
   },
   {
     quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+      "Their exceptional service and results-oriented approach have significantly boosted our online visibility and sales.",
+    name: "James Smith",
+    title: "Founder of EcoLiving Products",
+  },
+  {
+    quote: "From day one, their professionalism and expertise stood out. We couldn't be happier with the results.",
+    name: "Olivia Brown",
+    title: "COO of UrbanStyle Fashion",
   },
 ];
 
@@ -84,14 +84,17 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section id="testimonials">
-      <div className="max-w-7xl mx-auto py-20 lg:py-30">
-        <h2 className="flex justify-center items-center bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-transparent font-bold text-5xl pb-10">
-          Trusted by 1M+ people around the world
-        </h2>
+      <div className="w-full mx-auto py-20 lg:py-30 dark:bg-dot-white/[0.2] bg-dot-black/[0.03] [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">
+        <div className="flex justify-center items-center w-full h-full">
+          <h2 className="inline-block p-1 bg-clip-text text-transparent bg-gradient-to-br from-slate-300 to-slate-500 bg font-bold text-5xl mb-14">
+            Trusted by Industry Leaders{" "}
+            <span className="bg-gradient-to-b from-[#9e65f4] to-purple-700 bg-clip-text">Worldwide</span>
+          </h2>
+        </div>
         <div className="flex flex-row items-center justify-center mb-10 w-full pb-10">
           <AnimatedTooltip items={people} />
         </div>
-        <div className="h-[30rem] rounded-md flex flex-col antialiased dark:bg-grid-white/[0.03] bg-grid-black/[0.03] items-center justify-center relative overflow-hidden">
+        <div className="h-[30rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
         </div>
       </div>
