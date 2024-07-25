@@ -77,7 +77,7 @@ const About = () => {
           <Lamp mainText="Elevating every dimension of your" gradientText="digital world" />
         </div>
         <div className="h-[10rem] flex justify-start items-center px-4">
-          <div className="text-5xl font-normal text-neutral-600 dark:text-neutral-400 leading-tight">
+          <div className="text-5xl font-medium bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-transparent leading-tight">
             Build your
             <FlipWords words={words} /> <br />
             with GoSocial
