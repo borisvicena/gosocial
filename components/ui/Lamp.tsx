@@ -14,7 +14,7 @@ export function Lamp({ mainText, gradientText }: { mainText: string; gradientTex
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-3xl font-medium tracking-tight text-transparent md:text-6xl"
+        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-3xl font-bold tracking-tight text-transparent md:text-6xl"
         style={{ lineHeight: "1.5" }}
       >
         {mainText}
