@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import KeyStatistics from "@/components/KeyStatistics";
 import Navbar from "@/components/NavbarMenu";
@@ -15,6 +16,7 @@ export default function Home() {
         <About />
         <Services />
         <Testimonials />
+        <Footer />
       </div>
     </main>
   );
