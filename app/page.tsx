@@ -1,7 +1,7 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
 import KeyStatistics from "@/components/KeyStatistics";
-import { Navbar } from "@/components/ui/NavbarMenu";
+import Navbar from "@/components/NavbarMenu";
 
 export default function Home() {
   return (

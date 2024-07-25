@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
+import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 import { cn } from "@/lib/utils";
-import { ThemeToggle } from "./ThemeToggle";
+import { ThemeToggle } from "./ui/ThemeToggle";
 
-export function Navbar({ className }: { className?: string }) {
+function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <div className={cn("fixed top-10 inset-x-0 max-w-7xl mx-auto z-50", className)}>
@@ -41,3 +41,5 @@ export function Navbar({ className }: { className?: string }) {
     </div>
   );
 }
+
+export default Navbar;
