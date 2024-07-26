@@ -2,30 +2,19 @@ import React from "react";
 
 const MagicButton = ({
   title,
-  icon,
-  position,
   handleClick,
   otherClasses,
 }: {
   title: string;
-  icon: React.ReactNode;
-  position: string;
   handleClick?: () => void;
   otherClasses?: string;
 }) => {
   return (
-    <button
-      className="relative inline-flex h-12 w-full overflow-hidden rounded-lg p-[1px] focus:outline-none md:w-44 md:mt-10"
-      onClick={handleClick}
-    >
-      <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-      <span
-        className={`inline-flex h-full w-full cursor-pointer rounded-lg items-center justify-center bg-slate-900 px-4 py-1 text-sm text-white backdrop-blur-3xl gap-2 ${otherClasses}`}
-      >
-        {position === "left" && icon}
+    <button className="p-[3px] relative mt-14">
+      <div className="absolute inset-0 bg-gradient-to-r from-[#DA22FF] to-[#9733EE] rounded-lg" />
+      <div className="px-8 py-2 bg-black-100 rounded-lg relative group transition duration-200 text-white hover:bg-transparent">
         {title}
-        {position === "right" && icon}
-      </span>
+      </div>
     </button>
   );
 };

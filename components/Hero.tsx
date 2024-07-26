@@ -7,9 +7,9 @@ import { Spotlight } from "./ui/Spotlight";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36 max-w-7xl mx-auto">
+    <div className="relative pb-20 pt-36 max-w-7xl mx-auto">
       <div>
-        <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
+        <Spotlight className="-top-10 left-0" fill="white" />
       </div>
       <div>
         <GridBackground />
@@ -23,11 +23,11 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-5xl"
             words="Outstanding Digital Solutions for Marketing and Web Development"
           />
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl text-gray-500">
+          <p className="text-center md:tracking-wider my-4 text-sm md:text-lg lg:text-xl text-slate-400">
             Let us elevate your online presence and drive your success.
           </p>
           <a href="#about">
-            <MagicButton title="Learn more" icon={<SlArrowDown />} position="right" />
+            <MagicButton title="Learn more" />
           </a>
         </div>
       </div>
