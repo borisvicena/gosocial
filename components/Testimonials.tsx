@@ -88,7 +88,7 @@ const Testimonials = () => {
         <div className="flex justify-center items-center w-full h-full">
           <h2 className="inline-block p-1 bg-clip-text text-transparent bg-gradient-to-b from-slate-50 to-slate-400 bg font-bold text-5xl mb-14">
             Trusted by Industry Leaders{" "}
-            <span className="bg-gradient-to-br from-[#DA22FF] to-[#9733EE] bg-clip-text">Worldwide</span>
+            <span className="bg-gradient-to-br from-[#FF512F] to-[#F09819] bg-clip-text">Worldwide</span>
           </h2>
         </div>
         <div className="flex flex-row items-center justify-center mb-10 w-full pb-10">
