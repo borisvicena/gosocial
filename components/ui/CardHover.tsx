@@ -9,7 +9,6 @@ export const HoverEffect = ({
   items,
   className,
   icon,
-  iconPosition,
 }: {
   items: {
     title: string;
@@ -18,7 +17,6 @@ export const HoverEffect = ({
   }[];
   className?: string;
   icon: React.ReactNode;
-  iconPosition: string;
 }) => {
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
@@ -35,7 +33,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-[#cbacf9]/[0.1] block rounded-2xl"
+                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-[#02AAB0]/[0.1] block rounded-2xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -50,15 +48,13 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle className="bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-transparent">
+            <CardTitle className="text-lg font-light leading-snug tracking-wide uppercase bg-gradient-to-br from-[#00CDAC] to-[#9733EE] bg-clip-text text-transparent">
               {item.title}
             </CardTitle>
             <CardDescription>
               {item.description.map((desc) => (
-                <span key={desc} className="w-full inline-flex items-center">
-                  {iconPosition === "left" && icon}
-                  {desc}
-                  {iconPosition === "right" && icon}
+                <span key={desc} className="w-full inline-flex items-center gap-2">
+                  {icon} {desc}
                 </span>
               ))}
             </CardDescription>
@@ -73,7 +69,7 @@ export const Card = ({ className, children }: { className?: string; children: Re
   return (
     <div
       className={cn(
-        "rounded-lg h-full w-full p-4 overflow-hidden bg-black-100 border border-transparent dark:border-white/[0.2] group-hover:border-[#9e65f4] relative z-20",
+        "rounded-lg h-full w-full p-4 overflow-hidden bg-[#191c2f] border border-transparent dark:border-white/[0.2] group-hover:border-[#02AAB0] relative z-20",
         className
       )}
     >
@@ -87,5 +83,9 @@ export const CardTitle = ({ className, children }: { className?: string; childre
   return <h4 className={cn("text-zinc-100 font-bold tracking-wide mt-4", className)}>{children}</h4>;
 };
 export const CardDescription = ({ className, children }: { className?: string; children: React.ReactNode }) => {
-  return <p className={cn("mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm", className)}>{children}</p>;
+  return (
+    <p className={cn("mt-5 text-slate-300 font-extralight tracking-wide leading-relaxed text-sm", className)}>
+      {children}
+    </p>
+  );
 };

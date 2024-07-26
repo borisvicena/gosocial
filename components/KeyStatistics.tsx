@@ -12,10 +12,8 @@ const KeyStatistics = () => {
             <p className="text-4xl font-bold text-transparent bg-gradient-to-r from-[#4776E6] to-[#8E54E9] bg-clip-text">
               {value}
             </p>
-            <p className="text-base font-light uppercase tracking-wider dark:text-neutral-200 text-white relative z-20">
-              {title}
-            </p>
-            <p className="text-slate-100 mt-4 text-base font-extralight tracking-wide leading-snug relative z-20">
+            <p className="text-base font-light uppercase tracking-wider dark:text-white relative z-20">{title}</p>
+            <p className="dark:text-slate-100 mt-4 text-sm font-extralight tracking-wide leading-snug relative z-20">
               {description}
             </p>
           </div>

@@ -1,31 +1,32 @@
 import React from "react";
 import { HoverEffect } from "./ui/CardHover";
-import { FlipWords } from "./ui/FlipWords";
-import { flipWords } from "@/data";
 import { FaCaretRight } from "react-icons/fa";
 import { services } from "@/data";
+import { HeartHandshakeIcon } from "lucide-react";
+import { FiTarget } from "react-icons/fi";
+import { FaCheck } from "react-icons/fa6";
+import { IoMdCheckmark, IoMdCheckmarkCircle, IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 const Services = () => {
   return (
     <section id="services">
       <div className="pb-20 lg:pb-30 max-w-7xl mx-auto">
         <div className="h-[10rem] flex justify-start items-center">
-          <div className="text-5xl font-bold bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-transparent leading-tight">
-            Build your
-            <FlipWords words={flipWords} />
+          <div className="text-5xl font-bold bg-gradient-to-br from-slate-50 to-slate-500 bg-clip-text text-transparent leading-tight">
+            Our mission is clear:
             <br />
-            with GoSocial
+            build your{" "}
+            <span className="bg-gradient-to-br from-[#02AAB0] to-[#00CDAC] bg-clip-text">online success</span>
           </div>
         </div>
-        <div className="pb-10 max-w-xl text-justify">
-          <p className="text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque architecto deleniti blanditiis totam sint
-            provident itaque natus fuga voluptatum consectetur veniam maiores et molestias molestiae accusantium, quas
-            tenetur ipsum labore.
+        <div className="relative pb-10 max-w-xl">
+          <p className="text-slate-400 text-base leading-relaxed">
+            We create digital solutions from A to Z adaptable to any kind of business. Our team is dedicated to
+            enhancing your online presence and achieving your goals.
           </p>
         </div>
         <div className="max-w-7xl mx-auto">
-          <HoverEffect items={services} icon={<FaCaretRight />} iconPosition="left" />
+          <HoverEffect items={services} icon={<IoMdCheckmark color="#0f9b0f" />} />
         </div>
       </div>
     </section>
