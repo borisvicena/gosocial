@@ -48,7 +48,7 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle className="text-lg font-light leading-snug tracking-wide uppercase bg-gradient-to-br from-[#DA22FF] to-[#FF512F] bg-clip-text text-transparent">
+            <CardTitle className="text-lg font-light leading-snug tracking-wide uppercase bg-gradient-to-br from-[#4776E6] to-[#8E54E9] bg-clip-text text-transparent">
               {item.title}
             </CardTitle>
             <CardDescription>
