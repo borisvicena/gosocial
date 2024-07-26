@@ -86,9 +86,9 @@ const Testimonials = () => {
     <section id="testimonials">
       <div className="w-full mx-auto py-20 lg:py-30 dark:bg-dot-white/[0.2] bg-dot-black/[0.03] [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">
         <div className="flex justify-center items-center w-full h-full">
-          <h2 className="inline-block p-1 bg-clip-text text-transparent bg-gradient-to-br from-slate-300 to-slate-500 bg font-bold text-5xl mb-14">
+          <h2 className="inline-block p-1 bg-clip-text text-transparent bg-gradient-to-b from-slate-50 to-slate-400 bg font-bold text-5xl mb-14">
             Trusted by Industry Leaders{" "}
-            <span className="bg-gradient-to-b from-[#9e65f4] to-purple-700 bg-clip-text">Worldwide</span>
+            <span className="bg-gradient-to-br from-[#DA22FF] to-[#9733EE] bg-clip-text">Worldwide</span>
           </h2>
         </div>
         <div className="flex flex-row items-center justify-center mb-10 w-full pb-10">

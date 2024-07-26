@@ -28,8 +28,8 @@ export const TextGenerateEffect = ({ words, className }: { words: string; classN
               key={word + idx}
               className={`${
                 idx === 4 || idx > 5
-                  ? "bg-gradient-to-br from-[#9e65f4] dark:to-[#cbacf9] to-purple-700 bg-clip-text text-transparent"
-                  : "bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-transparent"
+                  ? "bg-gradient-to-br from-[#DA22FF] dark:to-[#9733EE] to-purple-700 bg-clip-text text-transparent"
+                  : "bg-gradient-to-b from-slate-50 to-slate-400 bg-clip-text text-transparent"
               } opacity-0`}
             >
               {word}{" "}
