@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import KeyStatistics from "@/components/KeyStatistics";
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <KeyStatistics />
         <Services />
+        <About />
         <Testimonials />
         <Footer />
       </div>
