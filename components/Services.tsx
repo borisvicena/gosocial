@@ -16,7 +16,7 @@ const Services = () => {
             Our mission is clear:
             <br />
             build your{" "}
-            <span className="bg-gradient-to-br from-[#02AAB0] to-[#00CDAC] bg-clip-text">online success</span>
+            <span className="bg-gradient-to-br from-[#FF512F] to-[#F09819] bg-clip-text">online success</span>
           </div>
         </div>
         <div className="relative pb-10 max-w-xl">

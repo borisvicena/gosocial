@@ -35,7 +35,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-[#02AAB0]/[0.1] block rounded-2xl"
+                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-[#F09819]/[0.25] block rounded-2xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -50,8 +50,8 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle className="gap-2 flex items-center text-lg font-light leading-snug tracking-wide uppercase bg-gradient-to-br from-[#4776E6] to-[#8E54E9] bg-clip-text text-transparent">
-              <span className="text-xl text-[#4776E6]">{item.icon}</span>
+            <CardTitle className="inline-flex gap-2 items-center text-lg font-bold leading-snug tracking-wide uppercase bg-gradient-to-r from-[#F09819] to-[#ff0084] bg-clip-text text-transparent">
+              <span className="text-[#191c2f] text-xl rounded-full bg-[#F09819] p-2">{item.icon}</span>
               {item.title}
             </CardTitle>
             <CardDescription>
@@ -72,7 +72,7 @@ export const Card = ({ className, children }: { className?: string; children: Re
   return (
     <div
       className={cn(
-        "rounded-lg h-full w-full p-4 overflow-hidden bg-[#191c2f] border border-transparent dark:border-white/[0.2] group-hover:border-[#02AAB0] relative z-20",
+        "rounded-lg h-full w-full p-4 overflow-hidden bg-[#191c2f] border border-transparent dark:border-white/[0.2] group-hover:border-[#ff0084] relative z-20",
         className
       )}
     >
@@ -87,8 +87,6 @@ export const CardTitle = ({ className, children }: { className?: string; childre
 };
 export const CardDescription = ({ className, children }: { className?: string; children: React.ReactNode }) => {
   return (
-    <p className={cn("mt-5 text-slate-300 font-extralight tracking-wide leading-relaxed text-sm", className)}>
-      {children}
-    </p>
+    <p className={cn("mt-5 text-slate-100 font-light tracking-wide leading-relaxed text-sm", className)}>{children}</p>
   );
 };
