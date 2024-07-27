@@ -26,7 +26,7 @@ const Hero = () => {
           <p className="text-center md:tracking-wider my-4 text-sm md:text-lg lg:text-xl text-slate-400">
             Let us elevate your online presence and drive your success.
           </p>
-          <a href="#about">
+          <a href="#services">
             <MagicButton title="Learn more" />
           </a>
         </div>

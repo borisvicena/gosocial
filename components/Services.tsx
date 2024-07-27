@@ -12,7 +12,7 @@ import { Spotlight } from "./ui/Spotlight";
 const Services = () => {
   return (
     <section id="services" className="border-b border-white/[0.2]">
-      <div className="relative pb-20 lg:pb-30 max-w-7xl mx-auto">
+      <div className="relative py-20 lg:py-32 max-w-7xl mx-auto">
         <div className="h-[10rem] flex justify-start items-center">
           <div className="text-5xl font-bold bg-gradient-to-br from-slate-50 to-slate-500 bg-clip-text text-transparent leading-tight">
             Our mission is clear:

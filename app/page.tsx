@@ -1,4 +1,3 @@
-import About from "@/components/About";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import KeyStatistics from "@/components/KeyStatistics";
@@ -13,7 +12,6 @@ export default function Home() {
         <Navbar className="top-2" />
         <Hero />
         <KeyStatistics />
-        <About />
         <Services />
         <Testimonials />
         <Footer />
