@@ -2,7 +2,8 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
+import React, { useState } from "react";
+import { IconType } from "react-icons";
 import { FaCaretRight, FaCrown } from "react-icons/fa";
 
 export const HoverEffect = ({
@@ -11,6 +12,7 @@ export const HoverEffect = ({
   icon,
 }: {
   items: {
+    icon: React.ReactNode;
     title: string;
     description: string[];
     link: string;
@@ -48,7 +50,8 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle className="text-lg font-light leading-snug tracking-wide uppercase bg-gradient-to-br from-[#4776E6] to-[#8E54E9] bg-clip-text text-transparent">
+            <CardTitle className="gap-2 flex items-center text-lg font-light leading-snug tracking-wide uppercase bg-gradient-to-br from-[#4776E6] to-[#8E54E9] bg-clip-text text-transparent">
+              <span className="text-xl text-[#4776E6]">{item.icon}</span>
               {item.title}
             </CardTitle>
             <CardDescription>

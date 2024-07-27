@@ -1,3 +1,5 @@
+import { FaCamera, FaChartLine, FaFileCode, FaMobile, FaPenRuler, FaShieldHalved } from "react-icons/fa6";
+
 // Items for grid
 export const gridItems = [
   {
@@ -31,9 +33,17 @@ export const gridItems = [
 // Words for flipping animation
 export const flipWords = ["website", "strategy", "design", "brand", "content"];
 
+interface Service {
+  icon: React.ReactNode;
+  title: string;
+  description: string[];
+  link: string;
+}
+
 // Services
-export const services = [
+export const services: Service[] = [
   {
+    icon: <FaFileCode />,
     title: "Web Development",
     description: [
       "Custom Website Design and Development",
@@ -44,6 +54,7 @@ export const services = [
     link: "/web-development",
   },
   {
+    icon: <FaMobile />,
     title: "Mobile App Development",
     description: [
       "iOS and Android App Development",
@@ -54,6 +65,7 @@ export const services = [
     link: "mobile-app-development",
   },
   {
+    icon: <FaChartLine />,
     title: "Digital Marketing",
     description: [
       "Search Engine Optimization (SEO)",
@@ -64,6 +76,7 @@ export const services = [
     link: "digital-marketing",
   },
   {
+    icon: <FaCamera />,
     title: "Content Creation",
     description: [
       "Copywriting and Blogging",
@@ -74,6 +87,7 @@ export const services = [
     link: "content-creation",
   },
   {
+    icon: <FaShieldHalved />,
     title: "Branding & Identity",
     description: [
       "Logo Design and Brand Identity",
@@ -84,6 +98,7 @@ export const services = [
     link: "branding-and-identity",
   },
   {
+    icon: <FaPenRuler />,
     title: "UI/UX Design",
     description: [
       "User Interface (UI) Design",

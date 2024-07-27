@@ -2,14 +2,14 @@ import React from "react";
 import { HoverEffect } from "./ui/CardHover";
 import { FaCaretRight } from "react-icons/fa";
 import { services } from "@/data";
-import { HeartHandshakeIcon } from "lucide-react";
+import { HeartHandshakeIcon, Icon } from "lucide-react";
 import { FiTarget } from "react-icons/fi";
 import { FaCheck } from "react-icons/fa6";
 import { IoMdCheckmark, IoMdCheckmarkCircle, IoMdCheckmarkCircleOutline } from "react-icons/io";
 
 const Services = () => {
   return (
-    <section id="services">
+    <section id="services" className="border-b border-white/[0.2]">
       <div className="pb-20 lg:pb-30 max-w-7xl mx-auto">
         <div className="h-[10rem] flex justify-start items-center">
           <div className="text-5xl font-bold bg-gradient-to-br from-slate-50 to-slate-500 bg-clip-text text-transparent leading-tight">
