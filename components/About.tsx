@@ -1,6 +1,9 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import ProfileCard from "./ui/CustomProfileCard";
+import ValuesSection from "./ui/ValuesSection";
+import MissionSection from "./ui/CustomMissionSection";
+import { LuHeartHandshake } from "react-icons/lu";
 
 const About = () => {
   return (
@@ -8,7 +11,7 @@ const About = () => {
       <div className="relative py-20 lg:py-32 max-w-7xl mx-auto">
         <div className="lg:flex lg:flex-row">
           <div className="lg:w-2/3 flex flex-col justify-start items-start px-4 lg:px-0">
-            <div className="text-5xl font-bold bg-gradient-to-br from-slate-50 to-slate-500 bg-clip-text text-transparent leading-tight">
+            <div className="text-5xl justify-start font-bold bg-gradient-to-br from-slate-50 to-slate-500 bg-clip-text text-transparent leading-tight">
               Meet GoSocial:
               <br />
               minds behind the{" "}
@@ -21,25 +24,64 @@ const About = () => {
                 Contact Us <BsArrowRight />
               </a>
             </p>
-            <a
-              href="#"
-              className="inline-block px-6 py-3 mt-6 bg-gradient-to-br from-[#02AAB0] to-[#4776E6] text-white font-semibold rounded-lg shadow-md"
-            >
-              Learn more
-            </a>
+            <div className="mt-0">
+              <MissionSection />
+            </div>
+            <div className="mt-0">
+              <ValuesSection />
+            </div>
+            <div className="w-full h-full flex justify-center items-end pt-10">
+              <a
+                href="/contact"
+                className="inline-flex justify-center items-center gap-2 text-base hover:text-[#ff0084] duration-500"
+              >
+                Partner With Us <LuHeartHandshake color="#ff0084" size={20} />
+              </a>
+            </div>
           </div>
-          <div className="flex justify-center lg:justify-end items-center w-full lg:w-1/3 mt-10 lg:mt-0">
-            <ProfileCard
-              imageSrc="/borisvicena.jpg"
-              name="Boris Vicena"
-              title="CEO, Web Developer, SEO Specialist"
-              socials={{
-                instagram: "https://instagram.com/borisvicena",
-                github: "https://github.com/borisvicena",
-                twitter: "https://twitter.com/borisvicena",
-                linkedin: "https://linkedin.com/in/borisvicena",
-              }}
-            />
+          <div className="flex justify-center lg:justify-end items-start w-full lg:w-1/3 mt-10 lg:mt-0">
+            <div className="flex-col">
+              <p className="font-bold mb-8 text-3xl">Our Core Team</p>
+              <div className="my-8">
+                <ProfileCard
+                  imageSrc="/borisvicena.jpg"
+                  name="Boris Vicena"
+                  title="CEO, Web Developer, SEO Specialist"
+                  socials={{
+                    instagram: "https://instagram.com/borisvicena",
+                    github: "https://github.com/borisvicena",
+                    twitter: "https://twitter.com/borisvicena",
+                    linkedin: "https://linkedin.com/in/borisvicena",
+                  }}
+                />
+              </div>
+              <div className="my-8">
+                <ProfileCard
+                  imageSrc="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80"
+                  name="John Doe"
+                  title="Web Developer, Software Engineer"
+                  socials={{
+                    instagram: "https://instagram.com/borisvicena",
+                    github: "https://github.com/borisvicena",
+                    twitter: "https://twitter.com/borisvicena",
+                    linkedin: "https://linkedin.com/in/borisvicena",
+                  }}
+                />
+              </div>
+              <div className="mt-8">
+                <ProfileCard
+                  imageSrc="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+                  name="Robert Johnson"
+                  title="Project Manager"
+                  socials={{
+                    instagram: "https://instagram.com/borisvicena",
+                    github: "https://github.com/borisvicena",
+                    twitter: "https://twitter.com/borisvicena",
+                    linkedin: "https://linkedin.com/in/borisvicena",
+                  }}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
