@@ -1,8 +1,11 @@
 import About from "@/components/About";
+import Blog from "@/components/Blog";
+import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import KeyStatistics from "@/components/KeyStatistics";
 import Navbar from "@/components/NavbarMenu";
+import Portfolio from "@/components/Portfolio";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 
@@ -14,8 +17,11 @@ export default function Home() {
         <Hero />
         <KeyStatistics />
         <Services />
+        <Portfolio />
         <About />
         <Testimonials />
+        <Blog />
+        <CTA />
         <Footer />
       </div>
     </main>

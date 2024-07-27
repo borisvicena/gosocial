@@ -37,7 +37,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials">
+    <section id="testimonials" className="border-b border-white/[0.2]">
       <div className="w-full mx-auto py-20 lg:py-30 dark:bg-dot-white/[0.2] bg-dot-black/[0.03] [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]">
         <div className="flex justify-center items-center w-full h-full">
           <h2 className="inline-block p-1 bg-clip-text text-transparent bg-gradient-to-b from-slate-50 to-slate-400 bg font-bold text-5xl mb-8">
