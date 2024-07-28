@@ -47,7 +47,8 @@ const Portfolio = () => {
           <div className="text-5xl font-bold bg-gradient-to-br from-slate-50 to-slate-500 bg-clip-text text-transparent leading-tight">
             Our journey:
             <br />
-            Showcasing client achievements
+            Showcasing{" "}
+            <span className="bg-gradient-to-br from-[#ff0084] to-[#9733EE] bg-clip-text">client achievements</span>
           </div>
         </div>
         <div className="relative pb-10 max-w-xl">
