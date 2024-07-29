@@ -1,9 +1,10 @@
 import React from "react";
+import { BackgroundBeams } from "./ui/BackgroundBeams";
 
 const CTA = () => {
   return (
     <section id="portfolio" className="border-b border-white/[0.2]">
-      <div className="bg-white dark:bg-gray-800 ">
+      <div className="h-[30rem] w-full rounded-md bg-black-100 relative flex flex-col items-center justify-center antialiased">
         <div className="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
           <h2 className="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
             <span className="block">Interested in partnership ?</span>
@@ -23,6 +24,7 @@ const CTA = () => {
             </div>
           </div>
         </div>
+        <BackgroundBeams />
       </div>
     </section>
   );
