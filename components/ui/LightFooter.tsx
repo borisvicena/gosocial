@@ -65,10 +65,10 @@ const LightFooter = () => {
           ))}
         </div>
 
-        <hr className="mt-16 mb-10 border-gray-200" />
+        <hr className="mt-16 mb-10 border-white/[0.2]" />
 
         <div className="sm:flex sm:items-center sm:justify-between">
-          <p className="text-sm text-slate-600">© Copyright 2024, All Rights Reserved by Aura UI</p>
+          <p className="text-sm text-slate-600">© Copyright 2024, All Rights Reserved by GoSocial | Boris Vicena</p>
 
           <ul className="flex items-center mt-5 space-x-3 md:order-3 sm:mt-0">
             {[
