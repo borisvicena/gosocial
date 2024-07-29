@@ -1,18 +1,23 @@
+// Toolkit: SigmaUI (Custom Component)
+// Author: Boris Vicena
+
 import { cn } from "@/lib/utils";
 import React from "react";
 
 const HeadingUI = () => {
   return (
-    <MainText className="text-center text-[40px] md:text-5xl lg:text-5xl">
-      Outstanding Digital Solutions for
-      <GradientText fromColor="#DA22FF" toColor="#9733EE">
-        Marketing
-      </GradientText>{" "}
-      and{" "}
-      <GradientText fromColor="#DA22FF" toColor="#9733EE">
-        Web Development
-      </GradientText>
-    </MainText>
+    <h1>
+      <MainText className="text-center text-[40px] md:text-5xl lg:text-5xl">
+        Outstanding Digital Solutions for
+        <GradientText fromColor="#DA22FF" toColor="#9733EE">
+          Marketing
+        </GradientText>{" "}
+        and{" "}
+        <GradientText fromColor="#DA22FF" toColor="#9733EE">
+          Web Development
+        </GradientText>
+      </MainText>
+    </h1>
   );
 };
 

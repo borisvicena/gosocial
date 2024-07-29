@@ -1,9 +1,9 @@
 import React from "react";
 import { GridBackground } from "./ui/GridBackground";
-import HeadingUI from "./ui/TextGenerate";
-import MagicButton from "./ui/MagicButton";
-import { SlArrowDown } from "react-icons/sl";
+import HeadingUI from "./ui/custom/HeadingUI";
 import { Spotlight } from "./ui/Spotlight";
+import ButtonUI from "./ui/custom/ButtonUI";
+import { FaArrowRightLong, FaRegCompass } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -23,9 +23,14 @@ const Hero = () => {
           <p className="text-center md:tracking-wider my-4 text-sm md:text-lg lg:text-xl text-slate-400">
             Let us elevate your online presence and drive your success.
           </p>
-          <a href="#services">
-            <MagicButton title="Learn more" />
-          </a>
+          <div className="inline-flex gap-4 my-10">
+            <a href="#services">
+              <ButtonUI text="Learn more" variant="secondary" size="large" icon={<FaRegCompass />} />
+            </a>
+            <a href="/contact">
+              <ButtonUI text="Contact" variant="none" size="large" icon={<FaArrowRightLong />} />
+            </a>
+          </div>
         </div>
       </div>
     </div>
