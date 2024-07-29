@@ -1,50 +1,47 @@
-"use client";
-import { useEffect } from "react";
-import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/lib/utils";
+import React from "react";
 
-export const TextGenerateEffect = ({ words, className }: { words: string; className?: string }) => {
-  const [scope, animate] = useAnimate();
-  let wordsArray = words.split(" ");
-  useEffect(() => {
-    animate(
-      "span",
-      {
-        opacity: 1,
-      },
-      {
-        duration: 2,
-        delay: stagger(0.2),
-      }
-    );
-  }, [scope.current]);
+const HeadingUI = () => {
+  return (
+    <MainText className="text-center text-[40px] md:text-5xl lg:text-5xl">
+      Outstanding Digital Solutions for
+      <GradientText fromColor="#DA22FF" toColor="#9733EE">
+        Marketing
+      </GradientText>{" "}
+      and{" "}
+      <GradientText fromColor="#DA22FF" toColor="#9733EE">
+        Web Development
+      </GradientText>
+    </MainText>
+  );
+};
 
-  const renderWords = () => {
-    return (
-      <motion.div ref={scope}>
-        {wordsArray.map((word, idx) => {
-          return (
-            <motion.span
-              key={word + idx}
-              className={`${
-                idx === 4 || idx > 5
-                  ? "bg-gradient-to-br from-[#DA22FF] dark:to-[#9733EE] to-purple-700 bg-clip-text text-transparent"
-                  : "bg-gradient-to-b from-slate-50 to-slate-400 bg-clip-text text-transparent"
-              } opacity-0`}
-            >
-              {word}{" "}
-            </motion.span>
-          );
-        })}
-      </motion.div>
-    );
-  };
-
+const MainText = ({ children, className }: { children: React.ReactNode; className: string }) => {
   return (
     <div className={cn("font-bold", className)}>
       <div className="my-4">
-        <div className=" dark:text-white text-black leading-snug tracking-wide">{renderWords()}</div>
+        <div className="leading-snug tracking-wide bg-gradient-to-br from-slate-50 to-slate-400 bg-clip-text text-transparent">
+          {children}
+        </div>
       </div>
     </div>
   );
 };
+
+const GradientText = ({
+  children,
+  fromColor,
+  toColor,
+}: {
+  children: React.ReactNode;
+  fromColor: string;
+  toColor: string;
+}) => {
+  return (
+    <div className={`inline-flex bg-gradient-to-br from-[${fromColor}] to-[${toColor}] bg-clip-text text-transparent`}>
+      {children}
+    </div>
+  );
+};
+
+export default HeadingUI;

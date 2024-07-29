@@ -1,6 +1,6 @@
 import React from "react";
 import { GridBackground } from "./ui/GridBackground";
-import { TextGenerateEffect } from "./ui/TextGenerate";
+import HeadingUI from "./ui/TextGenerate";
 import MagicButton from "./ui/MagicButton";
 import { SlArrowDown } from "react-icons/sl";
 import { Spotlight } from "./ui/Spotlight";
@@ -19,10 +19,7 @@ const Hero = () => {
           <h2 className="uppercase tracking-widest text-sm text-center dark:text-blue-100 text-blue-900 max-w-80">
             MULTI-DIGITAL SOLUTION AGENCY
           </h2>
-          <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-5xl"
-            words="Outstanding Digital Solutions for Marketing and Web Development"
-          />
+          <HeadingUI />
           <p className="text-center md:tracking-wider my-4 text-sm md:text-lg lg:text-xl text-slate-400">
             Let us elevate your online presence and drive your success.
           </p>
