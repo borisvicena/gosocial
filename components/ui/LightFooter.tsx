@@ -28,7 +28,7 @@ const LightFooter = () => {
               height={36}
             />
             <p className="text-base leading-relaxed text-slate-400 mt-7">
-              Build with passion. Get connected with AuraUI and get a perfect fluency in your Frontend Works.
+              Developing websites with passion and attention to detail.
             </p>
           </div>
 
