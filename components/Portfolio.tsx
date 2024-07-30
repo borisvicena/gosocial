@@ -43,16 +43,14 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="border-b border-white/[0.2]">
       <div className="relative py-20 lg:py-32 max-w-7xl mx-auto">
-        <div className="flex justify-start items-center">
-          <div className="text-5xl font-bold bg-gradient-to-br from-slate-50 to-slate-500 bg-clip-text text-transparent leading-tight">
+        <div className="flex flex-col justify-start items-start px-4 lg:px-0">
+          <div className="text-5xl justify-start font-bold bg-gradient-to-br from-slate-50 to-slate-500 bg-clip-text text-transparent leading-tight">
             Our journey:
             <br />
             Showcasing{" "}
             <span className="bg-gradient-to-br from-[#ff0084] to-[#9733EE] bg-clip-text">client achievements</span>
           </div>
-        </div>
-        <div className="relative pb-10 max-w-xl">
-          <p className="relative text-slate-400 text-base leading-relaxed inline">
+          <p className="text-slate-400 text-base leading-relaxed inline mt-4 mb-8 max-w-xl">
             Take a look at our portfolio to see the diverse range of projects we've successfully completed. Each project
             is a testament to our commitment to quality and client satisfaction.
           </p>
