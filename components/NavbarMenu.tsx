@@ -37,6 +37,8 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/enterprise">Enterprise</HoveredLink>
           </div>
         </MenuItem>
+        {/* TODO !!! */}
+        <HoveredLink href="/contact">Contact</HoveredLink>
       </Menu>
     </div>
   );
