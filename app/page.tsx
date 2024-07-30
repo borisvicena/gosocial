@@ -1,5 +1,4 @@
 import About from "@/components/About";
-import Blog from "@/components/Blog";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -20,7 +19,6 @@ export default function Home() {
         <Portfolio />
         <About />
         <Testimonials />
-        <Blog />
         <CTA />
         <Footer />
       </div>
