@@ -6,7 +6,7 @@ export default function Home() {
       <div className="w-full scroll-smooth">
         <Navbar className="top-2" />
         <div className="relative flex justify-center items-center mt-40">
-          <h1 className="font-bold text-4xl">Web Development</h1>
+          <h1 className="font-bold text-4xl">Digital Marketing</h1>
         </div>
       </div>
     </main>
