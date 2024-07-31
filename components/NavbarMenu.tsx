@@ -29,12 +29,12 @@ function Navbar({ className }: { className?: string }) {
             />
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Pricing">
+        <MenuItem setActive={setActive} active={active} item="About Us">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+            <HoveredLink href="/#about">Meet the team</HoveredLink>
+            <HoveredLink href="/#about">Our Mission</HoveredLink>
+            <HoveredLink href="/#about">Our Values</HoveredLink>
+            <HoveredLink href="/#about">Our Journey</HoveredLink>
           </div>
         </MenuItem>
         {/* TODO !!! */}
