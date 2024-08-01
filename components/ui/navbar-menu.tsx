@@ -70,19 +70,17 @@ export const Menu = ({
   children: React.ReactNode;
 }) => {
   return (
-    <nav className="relative rounded-lg backdrop-filter backdrop-blur-lg bg-opacity-30 border border-black-100/[0.2] dark:bg-transparent dark:border-white/[0.2]  shadow-input flex items-center px-8">
-      <div>
-        <a href="/" className="relative flex items-center font-bold gap-2 text-lg">
-          <img src="gosocial.png" alt="GoSocial" className="w-24 h-full" />
-        </a>
-      </div>
+    <nav className="relative rounded-lg backdrop-filter backdrop-blur-lg bg-opacity-30 border border-black-100/[0.2] dark:bg-transparent dark:border-white/[0.2] shadow-input flex items-center px-8">
+      <a href="/" className="font-bold gap-2 text-lg">
+        <img src="gosocial.png" alt="GoSocial" className="w-24 h-full" />
+      </a>
       <div
         onMouseLeave={() => setActive(null)} // resets the state
-        className="flex justify-center space-x-6 p-6"
+        className="inline-flex flex-auto justify-end space-x-6 p-6"
       >
         {children}
       </div>
-      <div className="flex flex-auto justify-end">
+      <div>
         <ThemeToggle />
       </div>
     </nav>
