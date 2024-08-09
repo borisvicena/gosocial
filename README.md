@@ -13,7 +13,9 @@ React based modern website for a digital agency that provides various services f
 
 ## Installation
 
-TODO
+```bash
+git clone $this_repo
+```
 
 <!-- MARKDOWN LINKS -->
 
