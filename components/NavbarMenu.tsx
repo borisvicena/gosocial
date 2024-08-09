@@ -7,7 +7,12 @@ import { ThemeToggle } from "./ui/ThemeToggle";
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
-    <div className={cn("fixed top-10 inset-x-0 max-w-7xl mx-auto z-50", className)}>
+    <div
+      className={cn(
+        "fixed backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-black-100/[0.2] dark:bg-transparent dark:border-white/[0.2] inset-x-0 z-50",
+        className
+      )}
+    >
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
