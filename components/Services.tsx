@@ -14,11 +14,10 @@ const Services = () => {
     <section id="services" className="border-b border-white/[0.2]">
       <div className="relative py-20 lg:py-32 max-w-7xl mx-auto">
         <div className="flex flex-col justify-start items-start px-4 lg:px-0">
-          <div className="text-5xl justify-start font-bold bg-gradient-to-br from-slate-50 to-slate-500 bg-clip-text text-transparent leading-tight">
+          <div className="text-5xl justify-start font-bold text-default-gradient leading-tight">
             Our mission is clear:
             <br />
-            build your{" "}
-            <span className="bg-gradient-to-br from-[#FF512F] to-[#F09819] bg-clip-text">online success</span>
+            build your <span className="text-orange-gradient">online success</span>
           </div>
           <p className="text-slate-400 text-base leading-relaxed mt-4 mb-8 max-w-xl">
             We create digital solutions from A to Z adaptable to any kind of business. Our team is dedicated to

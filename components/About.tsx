@@ -11,11 +11,10 @@ const About = () => {
       <div className="relative py-20 lg:py-32 max-w-7xl mx-auto">
         <div className="lg:flex lg:flex-row">
           <div className="lg:w-2/3 flex flex-col justify-start items-start px-4 lg:px-0">
-            <div className="text-5xl justify-start font-bold bg-gradient-to-br from-slate-50 to-slate-500 bg-clip-text text-transparent leading-tight">
+            <div className="text-5xl justify-start font-bold text-default-gradient leading-tight">
               Meet GoSocial:
               <br />
-              minds behind the{" "}
-              <span className="bg-gradient-to-br from-[#02AAB0] to-[#4776E6] bg-clip-text">digital magic</span>
+              minds behind the <span className="text-blue-gradient">digital magic</span>
             </div>
             <p className="text-slate-400 text-base leading-relaxed mt-4">
               Discover the passionate professionals who are dedicated to delivering innovative digital solutions. Learn

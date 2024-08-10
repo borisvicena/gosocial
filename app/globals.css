@@ -79,6 +79,32 @@
 }
 
 @layer utilities {
+  /* TEXT GRADIENTS */
+  .text-default-gradient {
+    @apply bg-gradient-to-br from-slate-50 to-slate-400 bg-clip-text text-transparent;
+  }
+
+  .text-purple-gradient {
+    @apply bg-gradient-to-br from-[#DA22FF] to-[#9733EE] bg-clip-text text-transparent;
+  }
+
+  .text-orange-gradient {
+    @apply bg-gradient-to-br from-[#FF512F] to-[#F09819] bg-clip-text text-transparent;
+  }
+
+  .text-pink-gradient {
+    @apply bg-gradient-to-br from-[#ff0084] to-[#9733EE] bg-clip-text text-transparent;
+  }
+
+  .text-blue-gradient {
+    @apply bg-gradient-to-br from-[#02AAB0] to-[#4776E6] bg-clip-text text-transparent;
+  }
+
+  /* BACKGROUND GRADIENTS */
+  .bg-purple-gradient {
+    @apply bg-gradient-to-br from-[#DA22FF] to-[#9733EE];
+  }
+
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;
   }
