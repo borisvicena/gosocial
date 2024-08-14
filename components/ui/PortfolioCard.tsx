@@ -1,5 +1,8 @@
+"use client";
+import Image from "next/image";
 import React from "react";
-import { BsArrowRight } from "react-icons/bs";
+import { CardBody, CardContainer, CardItem } from "../ui/3d-card";
+import Link from "next/link";
 
 type PortfolioCardProps = {
   imageSrc: string;
@@ -11,27 +14,44 @@ type PortfolioCardProps = {
 
 const PortfolioCard: React.FC<PortfolioCardProps> = ({ imageSrc, title, description, link, logoSrc }) => {
   return (
-    <div className="flex items-start p-4 rounded-lg shadow-md hover:shadow-lg mb-6">
-      {/* Left Side Image */}
-      <img src={imageSrc} alt={title} className="w-1/3 h-full object-cover rounded-md mr-6" />
-
-      {/* Right Side Content */}
-      <div className="flex flex-col flex-1">
-        <div className="flex items-center mb-2">
-          <img src={logoSrc} alt="Logo" className="w-10 h-10 object-contain mr-4" />
-          <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
+    <CardContainer className="inter-var">
+      <CardBody className="relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+        <CardItem translateZ="50" className="text-xl font-bold text-neutral-600 dark:text-white">
+          <img src={logoSrc} alt={title} className="w-1/3 mb-8" />
+          {title}
+        </CardItem>
+        <CardItem as="p" translateZ="60" className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
+          {description}
+        </CardItem>
+        <CardItem translateZ="100" className="w-full mt-4">
+          <Image
+            src={imageSrc}
+            height="1000"
+            width="1000"
+            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            alt="thumbnail"
+          />
+        </CardItem>
+        <div className="flex justify-between items-center mt-20">
+          <CardItem
+            translateZ={20}
+            as={Link}
+            href={link}
+            target="__blank"
+            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+          >
+            See project →
+          </CardItem>
+          <CardItem
+            translateZ={20}
+            as="button"
+            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+          >
+            Visit client
+          </CardItem>
         </div>
-        <p className="text-gray-600 text-sm mb-4">{description}</p>
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:text-blue-600 text-sm inline-flex items-center"
-        >
-          View Project <BsArrowRight className="ml-2" />
-        </a>
-      </div>
-    </div>
+      </CardBody>
+    </CardContainer>
   );
 };
 
