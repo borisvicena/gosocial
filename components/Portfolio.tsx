@@ -1,5 +1,6 @@
 import React from "react";
 import PortfolioCard from "./ui/PortfolioCard";
+import { TracingBeam } from "./ui/TracingBeam";
 
 const projects = [
   {
@@ -54,7 +55,7 @@ const Portfolio = () => {
             is a testament to our commitment to quality and client satisfaction.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8">
           {projects.map((project, index) => (
             <PortfolioCard
               key={index}
