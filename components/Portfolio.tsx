@@ -42,7 +42,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="border-b border-white/[0.2]">
+    <section id="portfolio" className="border-b border-white/[0.2] dark:bg-dot-white/[0.15]">
       <div className="relative py-20 lg:py-32 max-w-7xl mx-auto">
         <div className="flex flex-col justify-start items-start px-4 lg:px-0">
           <div className="text-5xl justify-start font-bold text-default-gradient leading-tight">
@@ -55,7 +55,7 @@ const Portfolio = () => {
             is a testament to our commitment to quality and client satisfaction.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
           {projects.map((project, index) => (
             <PortfolioCard
               key={index}
