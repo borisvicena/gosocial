@@ -4,15 +4,16 @@ type ValuesCardProps = {
   title: string;
   description: string;
   icon: React.ReactNode;
-  iconBgGradient: string;
 };
 
-const ValuesCard: React.FC<ValuesCardProps> = ({ title, description, icon, iconBgGradient }) => {
+const ValuesCard: React.FC<ValuesCardProps> = ({ title, description, icon }) => {
   return (
-    <div className="flex flex-col items-center p-4 bg-gradient-to-br from-[#191c2f] to-slate-800 border border-white/[0.2] rounded-lg shadow-md text-center transform transition duration-500 hover:scale-105">
-      <div className={`text-4xl mb-4 p-2 rounded-full ${iconBgGradient}`}>{icon}</div>
+    <div className="flex flex-col items-start p-4 border border-white/[0.2] rounded-lg group">
+      <div className="text-3xl mb-4 p-3 rounded-lg border border-white/[0.2] transition-all duration-500 group-hover:shadow-[#4776E6] group-hover:text-blue-gradient shadow-sm">
+        {icon}
+      </div>
       <h3 className="text-lg font-semibold mb-2 text-white">{title}</h3>
-      <p className="text-slate-400 text-sm tracking-wide leading-snug text-center">{description}</p>
+      <p className="text-slate-400 text-sm tracking-wide leading-snug text-left">{description}</p>
     </div>
   );
 };

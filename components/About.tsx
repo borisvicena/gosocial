@@ -23,20 +23,8 @@ const About = () => {
                 Contact Us <BsArrowRight />
               </a>
             </p>
-            <div className="mt-0">
-              <MissionSection />
-            </div>
-            <div className="mt-0">
-              <ValuesSection />
-            </div>
-            <div className="w-full h-full flex justify-center items-end pt-10">
-              <a
-                href="/contact"
-                className="inline-flex justify-center items-center gap-2 text-base hover:text-[#ff0084] duration-500"
-              >
-                Partner With Us <LuHeartHandshake color="#ff0084" size={20} />
-              </a>
-            </div>
+            <ValuesSection />
+            <MissionSection />
           </div>
           <div className="flex justify-center lg:justify-end items-start w-full lg:w-1/3 mt-10 lg:mt-0">
             <div className="flex-col">
