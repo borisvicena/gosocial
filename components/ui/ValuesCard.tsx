@@ -8,8 +8,10 @@ type ValuesCardProps = {
 
 const ValuesCard: React.FC<ValuesCardProps> = ({ title, description, icon }) => {
   return (
-    <div className="flex flex-col items-start p-4 border border-white/[0.2] rounded-lg group">
-      <div className="text-3xl mb-4 p-3 rounded-lg border border-white/[0.2] transition-all duration-500 group-hover:shadow-[#4776E6] group-hover:text-blue-gradient shadow-sm">
+    <div className="flex flex-col items-start p-4 border border-white/[0.2] rounded-lg">
+      <div
+        className={`text-3xl mb-4 p-3 rounded-lg border border-white/[0.2] transition-all duration-500 shadow-sm shadow-white`}
+      >
         {icon}
       </div>
       <h3 className="text-lg font-semibold mb-2 text-white">{title}</h3>

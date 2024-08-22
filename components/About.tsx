@@ -10,7 +10,7 @@ const About = () => {
     <section id="about" className="border-b border-white/[0.2]">
       <div className="relative py-20 lg:py-32 max-w-7xl mx-auto">
         <div className="lg:flex lg:flex-row">
-          <div className="lg:w-2/3 flex flex-col justify-start items-start px-4 lg:px-0">
+          <div className="flex flex-col justify-start items-start px-4 lg:px-0">
             <div className="text-5xl justify-start font-bold text-default-gradient leading-tight">
               Meet GoSocial:
               <br />
@@ -26,7 +26,7 @@ const About = () => {
             <ValuesSection />
             <MissionSection />
           </div>
-          <div className="flex justify-center lg:justify-end items-start w-full lg:w-1/3 mt-10 lg:mt-0">
+          {/* <div className="flex justify-center lg:justify-end items-start w-full lg:w-1/3 mt-10 lg:mt-0">
             <div className="flex-col">
               <p className="font-bold mb-8 text-3xl">Our Core Team</p>
               <div className="my-8">
@@ -68,8 +68,8 @@ const About = () => {
                   }}
                 />
               </div>
-            </div>
-          </div>
+            </div> 
+          </div>*/}
         </div>
       </div>
     </section>
