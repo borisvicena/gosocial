@@ -10,11 +10,9 @@ const About = () => {
     <section id="about" className="border-b border-white/[0.2]">
       <div className="relative py-20 lg:py-32 max-w-7xl mx-auto">
         <div className="lg:flex lg:flex-row">
-          <div className="flex flex-col justify-start items-start px-4 lg:px-0">
-            <div className="text-5xl justify-start font-bold text-default-gradient leading-tight">
-              Meet GoSocial:
-              <br />
-              minds behind the <span className="text-blue-gradient">digital magic</span>
+          <div className="flex flex-col justify-center items-center px-4 lg:px-0">
+            <div className="text-5xl justify-center font-bold text-default-gradient leading-loose">
+              We strive for better <span className="text-blue-gradient">digital future</span>
             </div>
             <p className="text-slate-400 text-base leading-relaxed mt-4">
               Discover the passionate professionals who are dedicated to delivering innovative digital solutions. Learn
@@ -24,7 +22,6 @@ const About = () => {
               </a>
             </p>
             <ValuesSection />
-            <MissionSection />
           </div>
           {/* <div className="flex justify-center lg:justify-end items-start w-full lg:w-1/3 mt-10 lg:mt-0">
             <div className="flex-col">
