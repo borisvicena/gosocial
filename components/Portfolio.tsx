@@ -1,7 +1,8 @@
 import React from "react";
 import PortfolioCard from "./ui/PortfolioCard";
 import { TracingBeam } from "./ui/TracingBeam";
-
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "./ui/Button";
 const projects = [
   {
     imageSrc: "/image1.png",
@@ -55,18 +56,17 @@ const Portfolio = () => {
             is a testament to our commitment to quality and client satisfaction.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
-          {projects.map((project, index) => (
-            <PortfolioCard
-              key={index}
-              imageSrc={project.imageSrc}
-              title={project.title}
-              description={project.description}
-              link={project.link}
-              logoSrc={project.logoSrc}
-            />
-          ))}
-        </div>
+        <Card className="w-[350px]">
+          <CardHeader>
+            <CardTitle>Digihry</CardTitle>
+            <CardDescription>Facebook and Instagram Ads Management</CardDescription>
+          </CardHeader>
+          <CardContent>Managed Facebook and Instagram Ad Campaigns with average ROAS of 3.7</CardContent>
+          <CardFooter className="flex justify-between">
+            <Button variant="outline">Client site</Button>
+            <Button>See project</Button>
+          </CardFooter>
+        </Card>{" "}
       </div>
     </section>
   );
