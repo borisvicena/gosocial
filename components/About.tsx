@@ -4,20 +4,21 @@ import ProfileCard from "./ui/CustomProfileCard";
 import ValuesSection from "./ui/ValuesSection";
 import MissionSection from "./ui/CustomMissionSection";
 import { LuHeartHandshake } from "react-icons/lu";
+import { Spotlight } from "./ui/Spotlight";
 
 const About = () => {
   return (
-    <section id="about" className="border-b border-white/[0.2]">
-      <div className="relative py-20 lg:py-32 max-w-7xl mx-auto">
+    <section id="about" className="border-b border-white/[0.2] bg-grid-white/[0.03]">
+      <div className="relative py-20 lg:py-32 max-w-5xl mx-auto">
         <div className="lg:flex lg:flex-row">
           <div className="flex flex-col justify-center items-center px-4 lg:px-0">
             <div className="text-5xl justify-center font-bold text-default-gradient leading-loose">
               We strive for better <span className="text-blue-gradient">digital future</span>
             </div>
-            <p className="text-slate-400 text-base leading-relaxed mt-4">
+            <p className="text-slate-400 text-base text-center leading-relaxed mt-4 mb-8 max-w-4xl">
               Discover the passionate professionals who are dedicated to delivering innovative digital solutions. Learn
               more about our journey, values, and the talented individuals who make it all happen.{" "}
-              <a href="#" className="inline-flex items-center gap-2 text-white text-sm font-semibold">
+              <a href="#" className="inline-flex items-center gap-2 text-white text-base">
                 Contact Us <BsArrowRight />
               </a>
             </p>

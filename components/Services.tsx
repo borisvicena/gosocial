@@ -1,13 +1,8 @@
 import React from "react";
 import { HoverEffect } from "./ui/CardHover";
-import { FaCaretRight } from "react-icons/fa";
 import { services } from "@/data";
-import { HeartHandshakeIcon, Icon } from "lucide-react";
-import { FiTarget } from "react-icons/fi";
-import { FaCheck } from "react-icons/fa6";
 import { IoMdCheckmark, IoMdCheckmarkCircle, IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { BsArrowRight } from "react-icons/bs";
-import { Spotlight } from "./ui/Spotlight";
 
 const Services = () => {
   return (
