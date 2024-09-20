@@ -1,5 +1,13 @@
 import test from "node:test";
 import { FaCamera, FaChartLine, FaFileCode, FaMobile, FaPenRuler, FaShieldHalved } from "react-icons/fa6";
+import {
+  IoBulbOutline,
+  IoDiamondOutline,
+  IoHappyOutline,
+  IoPeopleOutline,
+  IoShieldHalfOutline,
+  IoTrendingUpSharp,
+} from "react-icons/io5";
 
 // Section Header Settings
 export const SectionHeaderSettings = {
@@ -28,6 +36,41 @@ export const SectionHeaderSettings = {
       "Our clients' success is our success. Read what our satisfied clients have to say about our services, and discover the impact we've made on their businesses.",
   },
 };
+
+export const values = [
+  {
+    title: "Innovation",
+    description:
+      "We strive to bring the most innovative solutions to the market, pushing the boundaries of technology.",
+    icon: <IoBulbOutline />,
+  },
+  {
+    title: "Collaboration",
+    description: "Our team works closely with clients to ensure we deliver exactly what they need.",
+    icon: <IoPeopleOutline />,
+  },
+  {
+    title: "Growth",
+    description: "We focus on growth for both our clients and our company, continuously improving and evolving.",
+    icon: <IoTrendingUpSharp />,
+  },
+  {
+    title: "Integrity",
+    description: "We adhere to the highest ethical standards, ensuring trust and transparency in all our dealings.",
+    icon: <IoShieldHalfOutline />,
+  },
+  {
+    title: "Excellence",
+    description:
+      "We are committed to delivering excellence in everything we do, from our services to our customer support.",
+    icon: <IoDiamondOutline />,
+  },
+  {
+    title: "Customer Satisfaction",
+    description: "Our top priority is ensuring our clients are satisfied with our work and the results they achieve.",
+    icon: <IoHappyOutline />,
+  },
+];
 
 export const testimonials = [
   {
