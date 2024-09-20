@@ -41,7 +41,7 @@ const Testimonials = () => {
       <div className="w-full mx-auto py-20 lg:py-30">
         <div className="flex justify-center items-center w-full h-full">
           <h2 className="inline-block p-1 text-default-gradient font-bold text-5xl mb-8">
-            Hear from our <span className="text-orange-gradient">Happy Clients</span>
+            Hear from our <span className="text-blue-gradient">Happy Clients</span>
           </h2>
         </div>
         <div className="h-[30rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">

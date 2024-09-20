@@ -15,7 +15,7 @@ const ValuesCard: React.FC<ValuesCardProps> = ({ title, description, icon }) => 
         {icon}
       </div>
       <h3 className="text-lg font-bold mb-1 text-white leading-loose">{title}</h3>
-      <p className="text-slate-400 text-sm font-medium tracking-normal leading-snug text-center">{description}</p>
+      <p className="text-slate-400 text-sm font-normal tracking-normal leading-snug text-center">{description}</p>
     </div>
   );
 };

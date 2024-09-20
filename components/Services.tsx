@@ -6,7 +6,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Services = () => {
   return (
-    <section id="services" className="border-b border-white/[0.2]">
+    <section id="services">
       <div className="relative py-20 lg:py-32 max-w-7xl mx-auto">
         <div className="flex flex-col justify-start items-start px-4 lg:px-0">
           <div className="text-5xl justify-start font-bold text-default-gradient leading-tight">
