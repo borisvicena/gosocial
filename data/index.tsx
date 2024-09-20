@@ -12,8 +12,8 @@ import {
 // Section Header Settings
 export const SectionHeaderSettings = {
   portfolio: {
-    title: "Our Clients",
-    gradientTitle: "Success Stories",
+    title: "Our clients",
+    gradientTitle: "success stories",
     description:
       "Explore the projects we've delivered for our clients. Each card highlights the work we've done and the impact we've made, showcasing our expertise in driving successful outcomes.",
   },
