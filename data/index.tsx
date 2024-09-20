@@ -37,6 +37,46 @@ export const SectionHeaderSettings = {
   },
 };
 
+// Portfolio Items
+export const portfolioItems = [
+  {
+    logo: "/logo-digihry.png",
+    image: "/image1.png",
+    title: "Digihry",
+    description: "Gaming",
+    services: ["Facebook & Instagram Ads", "Strategy & Consulting", "Ads Management"],
+  },
+  {
+    logo: "/logo-br.png",
+    image: "/image2.png",
+    title: "Butterfly Reality",
+    description: "Real Estate",
+    services: ["Facebook & Instagram Ads", "Social Media Management", "Content Creation"],
+  },
+  {
+    logo: "/logo-previtalitu.webp",
+    image: "/image3.png",
+    title: "Pre Vitalitu",
+    description: "Health",
+    services: ["Social Media Management", "Content Creation", "Graphic Design"],
+  },
+  {
+    logo: "/logo-newspirit.webp",
+    image: "/image4.png",
+    title: "New Spirit",
+    description: "E-shop",
+    services: ["Social Media Management", "Content Creation", "Graphic Design"],
+  },
+  {
+    logo: "/logo-deska.webp",
+    image: "/image5.png",
+    title: "Deska",
+    description: "E-shop",
+    services: ["Social Media Management", "Content Creation", "Graphic Design"],
+  },
+];
+
+// Values
 export const values = [
   {
     title: "Innovation",
