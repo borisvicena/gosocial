@@ -12,12 +12,12 @@ const KeyStatistics = () => {
           {gridItems.map(({ id, title, value, description }) => (
             <motion.div
               key={id}
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 300 }}
+              animate={{ opacity: 1, y: 0 }}
               transition={{
-                duration: 0.8,
-                delay: 0.5,
-                ease: [0, 0.71, 0.2, 1.01],
+                duration: 1.5,
+                delay: 0.2,
+                ease: "easeInOut",
               }}
               className="relative bg-gradient-to-br from-[#191c2f] to-slate-800 p-4 rounded-lg overflow-hidden border dark:border-white/[0.2]"
             >

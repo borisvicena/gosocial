@@ -1,5 +1,7 @@
 import React from "react";
 import { InfiniteMovingCards } from "./ui/InfiniteMovingCards";
+import SectionHeader from "./ui/custom/SectionHeader";
+import { SectionHeaderSettings } from "@/data";
 
 const testimonials = [
   {
@@ -38,12 +40,14 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section id="testimonials" className="border-b border-white/[0.2]">
-      <div className="w-full mx-auto py-20 lg:py-30">
-        <div className="flex justify-center items-center w-full h-full">
-          <h2 className="inline-block p-1 text-default-gradient font-bold text-5xl mb-8">
-            Hear from our <span className="text-blue-gradient">Happy Clients</span>
-          </h2>
-        </div>
+      <div className="relative w-full max-w-7xl mx-auto py-20 lg:py-30">
+        <SectionHeader
+          title={SectionHeaderSettings.testimonials.title}
+          gradientTitle={SectionHeaderSettings.testimonials.gradientTitle}
+          gradient={"text-blue-gradient"}
+          description={SectionHeaderSettings.testimonials.description}
+          centered={true}
+        />
         <div className="h-[30rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
         </div>

@@ -1,4 +1,33 @@
+import test from "node:test";
 import { FaCamera, FaChartLine, FaFileCode, FaMobile, FaPenRuler, FaShieldHalved } from "react-icons/fa6";
+
+// Section Header Settings
+export const SectionHeaderSettings = {
+  portfolio: {
+    title: "Our Clients",
+    gradientTitle: "Success Stories",
+    description:
+      "Explore the projects we've delivered for our clients. Each card highlights the work we've done and the impact we've made, showcasing our expertise in driving successful outcomes.",
+  },
+  services: {
+    title: "We're here to drive",
+    gradientTitle: "your growth",
+    description:
+      "Our tailored digital solutions are built to transform businesses. From strategy to execution, we focus on maximizing your online potential and ensuring measurable success.",
+  },
+  about: {
+    title: "We strive for better",
+    gradientTitle: "digital future",
+    description:
+      "Join us on a journey driven by passion and innovation, where our expert team is dedicated to crafting cutting-edge digital solutions. Explore our commitment to integrity, collaboration, and growth, and meet the people who make it all possible. Let's create something exceptional together.",
+  },
+  testimonials: {
+    title: "What our clients",
+    gradientTitle: "say about us",
+    description:
+      "Our clients' success is our success. Read what our satisfied clients have to say about our services, and discover the impact we've made on their businesses.",
+  },
+};
 
 // Items for grid
 export const gridItems = [
@@ -107,5 +136,44 @@ export const services: Service[] = [
       "Usability Testing",
     ],
     link: "ui-and-ux-design",
+  },
+];
+
+// Projects in Portfolio
+const projects = [
+  {
+    imageSrc: "/image1.png",
+    title: "digihry.sk",
+    description: "Managed FB and IG Ad campaigns targeting relevant audience with average ROAS 2.7",
+    link: "https://digihry.sk",
+    logoSrc: "logo-digihry.png",
+  },
+  {
+    imageSrc: "/image2.png",
+    title: "butterfly-reality.sk",
+    description: "Managed FB and IG Ad campaigns targeting relevant audience with average ROAS 2.7",
+    link: "https://butterfly-reality.sk",
+    logoSrc: "logo-br.png",
+  },
+  {
+    imageSrc: "/image3.png",
+    title: "previtalitu.sk",
+    description: "Managed FB and IG Ad campaigns targeting relevant audience with average ROAS 2.7",
+    link: "https://previtalitu.sk",
+    logoSrc: "logo-previtalitu.webp",
+  },
+  {
+    imageSrc: "/image4.png",
+    title: "newspirit.sk",
+    description: "Managed FB and IG Ad campaigns targeting relevant audience with average ROAS 2.7",
+    link: "https://newspirit.sk",
+    logoSrc: "logo-newspirit.webp",
+  },
+  {
+    imageSrc: "/image5.png",
+    title: "deska.shop",
+    description: "Managed FB and IG Ad campaigns targeting relevant audience with average ROAS 2.7",
+    link: "https://deska.shop",
+    logoSrc: "logo-deska.webp",
   },
 ];

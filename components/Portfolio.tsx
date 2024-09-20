@@ -1,64 +1,21 @@
 import React from "react";
-import PortfolioCard from "./ui/PortfolioCard";
-import { TracingBeam } from "./ui/TracingBeam";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "./ui/Button";
-import { IoIosArrowRoundForward, IoMdCheckmark } from "react-icons/io";
+import { IoMdCheckmark } from "react-icons/io";
 import { BsPlusCircleDotted } from "react-icons/bs";
-
-const projects = [
-  {
-    imageSrc: "/image1.png",
-    title: "digihry.sk",
-    description: "Managed FB and IG Ad campaigns targeting relevant audience with average ROAS 2.7",
-    link: "https://digihry.sk",
-    logoSrc: "logo-digihry.png",
-  },
-  {
-    imageSrc: "/image2.png",
-    title: "butterfly-reality.sk",
-    description: "Managed FB and IG Ad campaigns targeting relevant audience with average ROAS 2.7",
-    link: "https://butterfly-reality.sk",
-    logoSrc: "logo-br.png",
-  },
-  {
-    imageSrc: "/image3.png",
-    title: "previtalitu.sk",
-    description: "Managed FB and IG Ad campaigns targeting relevant audience with average ROAS 2.7",
-    link: "https://previtalitu.sk",
-    logoSrc: "logo-previtalitu.webp",
-  },
-  {
-    imageSrc: "/image4.png",
-    title: "newspirit.sk",
-    description: "Managed FB and IG Ad campaigns targeting relevant audience with average ROAS 2.7",
-    link: "https://newspirit.sk",
-    logoSrc: "logo-newspirit.webp",
-  },
-  {
-    imageSrc: "/image5.png",
-    title: "deska.shop",
-    description: "Managed FB and IG Ad campaigns targeting relevant audience with average ROAS 2.7",
-    link: "https://deska.shop",
-    logoSrc: "logo-deska.webp",
-  },
-];
+import SectionHeader from "./ui/custom/SectionHeader";
+import { SectionHeaderSettings } from "@/data";
 
 const Portfolio = () => {
   return (
     <section id="portfolio">
       <div className="relative py-20 lg:py-32 max-w-7xl mx-auto">
-        <div className="flex flex-col justify-start items-start px-4 lg:px-0">
-          <div className="text-5xl justify-start font-bold text-default-gradient leading-tight">
-            Our journey:
-            <br />
-            Showcasing <span className="text-pink-gradient">client achievements</span>
-          </div>
-          <p className="text-slate-400 text-base leading-relaxed inline mt-4 mb-8 max-w-xl">
-            Take a look at our portfolio to see the diverse range of projects we've successfully completed. Each project
-            is a testament to our commitment to quality and client satisfaction.
-          </p>
-        </div>
+        <SectionHeader
+          title={SectionHeaderSettings.portfolio.title}
+          gradientTitle={SectionHeaderSettings.portfolio.gradientTitle}
+          gradient={"text-pink-gradient"}
+          description={SectionHeaderSettings.portfolio.description}
+        />
         <div className="flex flex-row justify-between">
           <Card className="w-[400px] bg-transparent border-white/[0.2] hover:border-blue-500/[0.5] transition-all duration-700 group">
             <CardHeader>
@@ -210,32 +167,39 @@ const Portfolio = () => {
           </Card>
           <Card className="w-[400px] bg-transparent border-white/[0.2] hover:border-blue-500/[0.5] transition-all duration-700 group">
             <CardHeader>
-              <p>Your logo</p>
+              <p className="text-white/[0.2] group-hover:text-white transition-all duration-1000">Your logo</p>
               <div className="flex justify-center items-center h-60">
                 <BsPlusCircleDotted
                   size={64}
-                  className="group-hover:text-blue-500 transition-all duration-700 hover:cursor-pointer"
+                  className="text-white/[0.2] group-hover:text-blue-500 transition-all duration-700 hover:cursor-pointer"
                 />
               </div>
-              <CardTitle>Your Company</CardTitle>
-              <CardDescription>Your Industry</CardDescription>
+              <CardTitle className="text-white/[0.2] group-hover:text-white transition-all duration-1000">
+                Your Company
+              </CardTitle>
+              <CardDescription className="text-white/[0.2] group-hover:text-muted-foreground transition-all duration-1000">
+                Your Industry
+              </CardDescription>
             </CardHeader>
-            <CardContent>
-              <div className="w-full inline-flex items-center gap-2">
-                <IoMdCheckmark color="#0f9b0f" />
+            <CardContent className="text-white/[0.2] group-hover:text-white">
+              <div className="w-full inline-flex items-center gap-2 transition-all duration-300">
+                <IoMdCheckmark className="text-white/[0.2] group-hover:text-[#0f9b0f] transition-all duration-300" />
                 Everything
               </div>
-              <div className="w-full inline-flex items-center gap-2">
-                <IoMdCheckmark color="#0f9b0f" />
+              <div className="w-full inline-flex items-center gap-2 transition-all duration-500">
+                <IoMdCheckmark className="text-white/[0.2] group-hover:text-[#0f9b0f] transition-all duration-500" />
                 you
               </div>
-              <div className="w-full inline-flex items-center gap-2">
-                <IoMdCheckmark color="#0f9b0f" />
+              <div className="w-full inline-flex items-center gap-2 transition-all duration-700">
+                <IoMdCheckmark className="text-white/[0.2] group-hover:text-[#0f9b0f] transition-all duration-700" />
                 need!
               </div>
             </CardContent>
             <CardFooter className="flex justify-center">
-              <Button variant="outline" className="group-hover:border-blue-500  transition-all duration-500">
+              <Button
+                variant="outline"
+                className="text-white/[0.2] group-hover:text-white group-hover:border-blue-500  transition-all duration-500"
+              >
                 Contact Us
               </Button>
               {/* <Button className="group-hover:bg-blue-500 bg-white/[0.2] text-white transition-all duration-500">
