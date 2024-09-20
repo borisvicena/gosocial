@@ -25,44 +25,56 @@ export const HoverEffect = ({
   return (
     <div className={cn("grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pb-10", className)}>
       {items.map((item, idx) => (
-        <Link
-          href={item?.link}
+        <motion.div
           key={item?.link}
-          className="relative group block p-2 h-full w-full"
-          onMouseEnter={() => setHoveredIndex(idx)}
-          onMouseLeave={() => setHoveredIndex(null)}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{
+            duration: 0.5,
+            delay: idx * 0.1,
+            ease: "easeInOut",
+          }}
         >
-          <AnimatePresence>
-            {hoveredIndex === idx && (
-              <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-[#F09819]/[0.25] block rounded-2xl"
-                layoutId="hoverBackground"
-                initial={{ opacity: 0 }}
-                animate={{
-                  opacity: 1,
-                  transition: { duration: 0.15 },
-                }}
-                exit={{
-                  opacity: 0,
-                  transition: { duration: 0.15, delay: 0.2 },
-                }}
-              />
-            )}
-          </AnimatePresence>
-          <Card>
-            <CardTitle className="inline-flex gap-2 items-center text-lg font-bold leading-snug tracking-wide uppercase bg-gradient-to-r from-[#F09819] to-[#ff0084] bg-clip-text text-transparent">
-              <span className="text-[#191c2f] text-xl rounded-full bg-[#F09819] p-2">{item.icon}</span>
-              {item.title}
-            </CardTitle>
-            <CardDescription>
-              {item.description.map((desc) => (
-                <span key={desc} className="w-full inline-flex items-center gap-2">
-                  {icon} {desc}
-                </span>
-              ))}
-            </CardDescription>
-          </Card>
-        </Link>
+          <Link
+            href={item?.link}
+            key={item?.link}
+            className="relative group block p-2 h-full w-full"
+            onMouseEnter={() => setHoveredIndex(idx)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <AnimatePresence>
+              {hoveredIndex === idx && (
+                <motion.span
+                  className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-[#F09819]/[0.25] block rounded-2xl"
+                  layoutId="hoverBackground"
+                  initial={{ opacity: 0 }}
+                  animate={{
+                    opacity: 1,
+                    transition: { duration: 0.15 },
+                  }}
+                  exit={{
+                    opacity: 0,
+                    transition: { duration: 0.15, delay: 0.2 },
+                  }}
+                />
+              )}
+            </AnimatePresence>
+            <Card>
+              <CardTitle className="inline-flex gap-2 items-center text-lg font-bold leading-snug tracking-wide uppercase bg-gradient-to-r from-[#F09819] to-[#ff0084] bg-clip-text text-transparent">
+                <span className="text-[#191c2f] text-xl rounded-full bg-[#F09819] p-2">{item.icon}</span>
+                {item.title}
+              </CardTitle>
+              <CardDescription>
+                {item.description.map((desc) => (
+                  <span key={desc} className="w-full inline-flex items-center gap-2">
+                    {icon} {desc}
+                  </span>
+                ))}
+              </CardDescription>
+            </Card>
+          </Link>
+        </motion.div>
       ))}
     </div>
   );
