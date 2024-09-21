@@ -1,4 +1,5 @@
 import test from "node:test";
+import { title } from "process";
 import { FaCamera, FaChartLine, FaFileCode, FaMobile, FaPenRuler, FaShieldHalved } from "react-icons/fa6";
 import {
   IoBulbOutline,
@@ -73,6 +74,14 @@ export const portfolioItems = [
     title: "Deska",
     description: "E-shop",
     services: ["Social Media Management", "Content Creation", "Graphic Design"],
+  },
+  {
+    logo: "Your logo",
+    image: "",
+    title: "Your Company",
+    description: "Your Industry",
+    services: ["Everything", "you", "need!"],
+    placeholder: true,
   },
 ];
 
