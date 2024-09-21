@@ -1,14 +1,19 @@
 import Navbar from "@/components/NavbarMenu";
+import MainProvider, { SectionProvider } from "@/components/ui/custom/SectionProvider";
+import SectionHeader from "@/components/ui/custom/SectionHeader";
 
 export default function Home() {
   return (
-    <main className="relative bg-gray-100 dark:bg-black-100 flex justify-center items-center flex-col overflow-hidden antialiased">
-      <div className="w-full scroll-smooth">
-        <Navbar className="top-2" />
-        <div className="relative flex justify-center items-center mt-40">
-          <h1 className="font-bold text-4xl">Content Creation</h1>
-        </div>
-      </div>
-    </main>
+    <MainProvider>
+      <SectionProvider id="content-creation">
+        <SectionHeader
+          title="Content Creation"
+          gradientTitle="Engaging, High-Quality"
+          gradient="text-blue-gradient"
+          description="We create engaging, high-quality content that is tailored to your audience. Our team of writers, designers, and marketers work together to create content that drives results for your business."
+          centered
+        />
+      </SectionProvider>
+    </MainProvider>
   );
 }

@@ -1,14 +1,19 @@
 import Navbar from "@/components/NavbarMenu";
+import SectionHeader from "@/components/ui/custom/SectionHeader";
+import MainProvider, { SectionProvider } from "@/components/ui/custom/SectionProvider";
 
 export default function Home() {
   return (
-    <main className="relative bg-gray-100 dark:bg-black-100 flex justify-center items-center flex-col overflow-hidden antialiased">
-      <div className="w-full scroll-smooth">
-        <Navbar className="top-2" />
-        <div className="relative flex justify-center items-center mt-40">
-          <h1 className="font-bold text-4xl">Web Development</h1>
-        </div>
-      </div>
-    </main>
+    <MainProvider>
+      <SectionProvider id="web-development">
+        <SectionHeader
+          title="Web Development"
+          gradientTitle="Fast, Secure, User-Friendly"
+          gradient="text-blue-gradient"
+          description="We build websites and web applications that are fast, secure, and user-friendly. Our team of developers are experts in front-end and back-end technologies, ensuring that your website is built to the highest standards."
+          centered
+        />
+      </SectionProvider>
+    </MainProvider>
   );
 }

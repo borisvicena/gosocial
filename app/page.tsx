@@ -3,25 +3,22 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import KeyStatistics from "@/components/KeyStatistics";
-import Navbar from "@/components/NavbarMenu";
 import Portfolio from "@/components/Portfolio";
 import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
+import MainProvider from "@/components/ui/custom/SectionProvider";
 
 export default function Home() {
   return (
-    <main className="relative bg-gray-100 dark:bg-black-100 flex justify-center items-center flex-col overflow-hidden antialiased">
-      <div className="w-full scroll-smooth">
-        <Navbar />
-        <Hero />
-        <KeyStatistics />
-        <Services />
-        <Portfolio />
-        <About />
-        <Testimonials />
-        <CTA />
-        <Footer />
-      </div>
-    </main>
+    <MainProvider>
+      <Hero />
+      <KeyStatistics />
+      <Services />
+      <Portfolio />
+      <About />
+      <Testimonials />
+      <CTA />
+      <Footer />
+    </MainProvider>
   );
 }
