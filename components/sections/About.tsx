@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import SectionHeader from "./ui/custom/SectionHeader";
+import SectionHeader from "@/components/ui/custom/SectionHeader";
 import { SectionHeaderSettings, values } from "@/data";
-import ValuesCard from "./ui/ValuesCard";
+import ValuesCard from "@/components/ui/ValuesCard";
 import { motion } from "framer-motion";
-import { SectionProvider } from "./ui/custom/SectionProvider";
+import { SectionProvider } from "@/components/ui/custom/SectionProvider";
 
 const About = () => {
   return (

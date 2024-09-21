@@ -1,5 +1,5 @@
 import React from "react";
-import LightFooter from "./ui/LightFooter";
+import LightFooter from "@/components/ui/LightFooter";
 
 const Footer = () => {
   return (

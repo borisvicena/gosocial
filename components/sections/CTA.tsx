@@ -1,6 +1,6 @@
 import React from "react";
-import { BackgroundBeams } from "./ui/BackgroundBeams";
-import ButtonUI from "./ui/custom/ButtonUI";
+import { BackgroundBeams } from "@/components/ui/BackgroundBeams";
+import ButtonUI from "@/components/ui/custom/ButtonUI";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const CTA = () => {

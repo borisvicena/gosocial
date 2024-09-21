@@ -1,11 +1,11 @@
-import About from "@/components/About";
-import CTA from "@/components/CTA";
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
-import KeyStatistics from "@/components/KeyStatistics";
-import Portfolio from "@/components/Portfolio";
-import Services from "@/components/Services";
-import Testimonials from "@/components/Testimonials";
+import About from "@/components/sections/About";
+import CTA from "@/components/sections/CTA";
+import Footer from "@/components/sections/Footer";
+import Hero from "@/components/sections/Hero";
+import KeyStatistics from "@/components/sections/KeyStatistics";
+import Portfolio from "@/components/sections/Portfolio";
+import Services from "@/components/sections/Services";
+import Testimonials from "@/components/sections/Testimonials";
 import MainProvider from "@/components/ui/custom/SectionProvider";
 
 export default function Home() {

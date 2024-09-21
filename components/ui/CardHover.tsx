@@ -3,8 +3,6 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import React, { useState } from "react";
-import { IconType } from "react-icons";
-import { FaCaretRight, FaCrown } from "react-icons/fa";
 
 export const HoverEffect = ({
   items,

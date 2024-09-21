@@ -1,8 +1,8 @@
 import React from "react";
-import { InfiniteMovingCards } from "./ui/InfiniteMovingCards";
-import SectionHeader from "./ui/custom/SectionHeader";
+import { InfiniteMovingCards } from "@/components/ui/InfiniteMovingCards";
+import SectionHeader from "@/components/ui/custom/SectionHeader";
 import { SectionHeaderSettings, testimonials } from "@/data";
-import { SectionProvider } from "./ui/custom/SectionProvider";
+import { SectionProvider } from "@/components/ui/custom/SectionProvider";
 
 // ZEALOT - potencialne meno firmy
 

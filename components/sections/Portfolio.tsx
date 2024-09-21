@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "./ui/Button";
+import { Button } from "@/components/ui/Button";
 import { IoMdCheckmark } from "react-icons/io";
 import { BsPlusCircleDotted } from "react-icons/bs";
-import SectionHeader from "./ui/custom/SectionHeader";
+import SectionHeader from "@/components/ui/custom/SectionHeader";
 import { SectionHeaderSettings, portfolioItems } from "@/data";
-import PortfolioCard from "./ui/custom/PortfolioCard";
+import PortfolioCard from "@/components/ui/custom/PortfolioCard";
 import { motion } from "framer-motion";
-import { SectionProvider } from "./ui/custom/SectionProvider";
+import { SectionProvider } from "@/components/ui/custom/SectionProvider";
 
 const Portfolio = () => {
   return (

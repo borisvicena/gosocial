@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Grid } from "./ui/FeaturesSection";
+import { Grid } from "@/components/ui/FeaturesSection";
 import { gridItems } from "@/data";
 import { motion } from "framer-motion";
 

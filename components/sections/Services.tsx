@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import { HoverEffect } from "./ui/CardHover";
+import { HoverEffect } from "@/components/ui/CardHover";
 import { services } from "@/data";
 import { IoMdCheckmark } from "react-icons/io";
-import SectionHeader from "./ui/custom/SectionHeader";
+import SectionHeader from "@/components/ui/custom/SectionHeader";
 import { SectionHeaderSettings } from "@/data";
-import { SectionProvider } from "./ui/custom/SectionProvider";
+import { SectionProvider } from "@/components/ui/custom/SectionProvider";
 
 const Services = () => {
   return (
