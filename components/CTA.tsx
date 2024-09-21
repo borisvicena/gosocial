@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const CTA = () => {
   return (
-    <section id="portfolio" className="border-y border-white/[0.2]">
+    <section id="cta" className="border-y border-white/[0.2]">
       <div className="h-[30rem] w-full rounded-md bg-gradient-to-br from-[#191c2f] to-black-100 relative flex flex-col items-center justify-center antialiased">
         <div className="text-center w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
           <h2 className="flex flex-col justify-center items-center text-3xl font-extrabold text-black dark:text-white sm:text-4xl">

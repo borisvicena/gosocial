@@ -21,7 +21,7 @@ export const MenuItem = ({
   item,
   children,
 }: {
-  setActive: (item: string) => void;
+  setActive: (item: string | null) => void;
   active: string | null;
   item: string;
   children?: React.ReactNode;
@@ -36,12 +36,12 @@ export const MenuItem = ({
       </motion.p>
       {active !== null && (
         <motion.div
-          initial={{ opacity: 0, scale: 0.85, y: 10 }}
+          initial={{ opacity: 0, scale: 0.85, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={transition}
         >
           {active === item && (
-            <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
+            <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2">
               <motion.div
                 transition={transition}
                 layoutId="active" // layoutId ensures smooth animation
@@ -74,14 +74,8 @@ export const Menu = ({
       <a href="/" className="font-bold gap-2 text-lg">
         <img src="gosocial.png" alt="GoSocial" className="w-24 h-full" />
       </a>
-      <div
-        onMouseLeave={() => setActive(null)} // resets the state
-        className="inline-flex flex-auto justify-end space-x-6 p-6"
-      >
+      <div onMouseLeave={() => setActive(null)} className="inline-flex items-center ml-auto justify-end space-x-6 p-4">
         {children}
-      </div>
-      <div>
-        <ThemeToggle />
       </div>
     </nav>
   );
@@ -108,10 +102,9 @@ export const ProductItem = ({
     </Link>
   );
 };
-
 export const HoveredLink = ({ children, ...rest }: any) => {
   return (
-    <Link {...rest} className="text-neutral-700 dark:text-neutral-200 hover:text-black ">
+    <Link {...rest} className="text-neutral-700 dark:text-neutral-200 ">
       {children}
     </Link>
   );

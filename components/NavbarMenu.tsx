@@ -1,15 +1,67 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "./ui/ThemeToggle";
 
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
+
+  const sections = useRef(["hero", "services", "portfolio", "about", "testimonials", "cta"]);
+
+  const getBorderColor = () => {
+    switch (active) {
+      case "services":
+        return "border-b-2 border-orange-500";
+      case "portfolio":
+        return "border-b-2 border-pink-500";
+      case "about":
+      case "testimonials":
+        return "border-b-2 border-blue-500";
+      case "hero":
+      case "cta":
+      default:
+        return "border-white/[0.2]";
+    }
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
+      },
+      {
+        rootMargin: "0px",
+        threshold: 0.5,
+      }
+    );
+
+    sections.current.forEach((id) => {
+      const section = document.getElementById(id);
+      if (section) {
+        observer.observe(section);
+      }
+    });
+
+    return () => {
+      sections.current.forEach((id) => {
+        const section = document.getElementById(id);
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+    };
+  }, []);
+
   return (
     <div
       className={cn(
-        "fixed backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-black-100/[0.2] dark:bg-transparent dark:border-white/[0.2] inset-x-0 z-50",
+        "fixed backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-white/[0.2] dark:bg-transparent inset-x-0 z-50 transition-all duration-700",
+        getBorderColor(),
         className
       )}
     >
@@ -40,10 +92,10 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/#about">Our Mission</HoveredLink>
             <HoveredLink href="/#about">Our Values</HoveredLink>
             <HoveredLink href="/#about">Our Journey</HoveredLink>
+            <HoveredLink href="/contact">Contact</HoveredLink>
           </div>
         </MenuItem>
-        {/* TODO !!! */}
-        <HoveredLink href="/contact">Contact</HoveredLink>
+        <ThemeToggle />
       </Menu>
     </div>
   );
