@@ -13,7 +13,7 @@ const CTA = () => {
             <span className="inline-flex bg-purple-gradient py-1 px-3 rounded-lg mb-8">It&#x27;s today or never.</span>
           </h2>
           <p className="text-base mt-4 max-w-md mx-auto text-slate-400">
-            We're here to support you every step of the way. Join our happy clients and start building your digital
+            We&apos;re here to support you every step of the way. Join our happy clients and start building your digital
             future today.
           </p>
           <div className="lg:mt-0 lg:flex-shrink-0">

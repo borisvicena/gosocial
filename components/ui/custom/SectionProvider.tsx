@@ -1,5 +1,4 @@
 import Navbar from "@/components/sections/NavbarMenu";
-import { Main } from "next/document";
 import React from "react";
 
 type SectionProviderProps = {

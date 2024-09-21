@@ -16,10 +16,10 @@ export const SectionHeaderSettings = {
     title: "Our clients",
     gradientTitle: "success stories",
     description:
-      "Explore the projects we've delivered for our clients. Each card highlights the work we've done and the impact we've made, showcasing our expertise in driving successful outcomes.",
+      "Explore the projects we&apos;ve delivered for our clients. Each card highlights the work we&apos;ve done and the impact we&apos;ve made, showcasing our expertise in driving successful outcomes.",
   },
   services: {
-    title: "We're here to drive",
+    title: "We&apos;re here to drive",
     gradientTitle: "your growth",
     description:
       "Our tailored digital solutions are built to transform businesses. From strategy to execution, we focus on maximizing your online potential and ensuring measurable success.",
@@ -28,13 +28,13 @@ export const SectionHeaderSettings = {
     title: "We strive for better",
     gradientTitle: "digital future",
     description:
-      "Join us on a journey driven by passion and innovation, where our expert team is dedicated to crafting cutting-edge digital solutions. Explore our commitment to integrity, collaboration, and growth, and meet the people who make it all possible. Let's create something exceptional together.",
+      "Join us on a journey driven by passion and innovation, where our expert team is dedicated to crafting cutting-edge digital solutions. Explore our commitment to integrity, collaboration, and growth, and meet the people who make it all possible. Let&apos;s create something exceptional together.",
   },
   testimonials: {
     title: "What our clients",
     gradientTitle: "say about us",
     description:
-      "Our clients' success is our success. Read what our satisfied clients have to say about our services, and discover the impact we've made on their businesses.",
+      "Our clients success is our success. Read what our satisfied clients have to say about our services, and discover the impact we&apos;ve made on their businesses.",
   },
 };
 
@@ -136,7 +136,7 @@ export const testimonials = [
   },
   {
     quote:
-      "The team's strategic insights and creative solutions helped us achieve our best sales year yet. Highly recommend!",
+      "The team&apos;s strategic insights and creative solutions helped us achieve our best sales year yet. Highly recommend!",
     name: "Emily Martinez",
     title: "Head of Digital Strategy at HealthPlus",
   },
@@ -148,7 +148,7 @@ export const testimonials = [
   },
   {
     quote:
-      "From day one, their professionalism and expertise stood out. We couldn't be happier with the results. Excellent work!",
+      "From day one, their professionalism and expertise stood out. We couldn&apos;t be happier with the results. Excellent work!",
     name: "Olivia Brown",
     title: "COO of UrbanStyle Fashion",
   },
