@@ -1,4 +1,4 @@
-import Navbar from "@/components/NavbarMenu";
+import Navbar from "@/components/sections/NavbarMenu";
 import SectionHeader from "@/components/ui/custom/SectionHeader";
 import MainProvider, { SectionProvider } from "@/components/ui/custom/SectionProvider";
 
